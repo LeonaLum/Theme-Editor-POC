@@ -1,0 +1,7 @@
+.actions-page{
+  @include Flexbox(row, center, center);
+  background-color: var(--BackgroundGrey);
+  column-gap: 5em;
+  height: 100%;
+  width: 100%;
+}

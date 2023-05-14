@@ -1,0 +1,60 @@
+.table-outer{
+  @include BoxShadowSoft;
+  @include Scrollbar;
+  border-radius: 20px;
+  background-color: white;
+  height: 350px;
+  width: 80%;
+  max-width: 800px;
+  overflow: auto;
+  font-size: 0.8rem;
+  table{
+    width: 100%;
+    thead{
+      width: 100%;
+      th{
+        position: sticky;
+        top: 0;
+        left: 0;
+        border-bottom: solid 1px var(--LightGrey);
+      }
+    }
+    tbody{
+      .highlight-row{
+        background-color: red;
+      }
+      tr:nth-child(even){
+         border-top: solid var(--LightestGrey) 1px;
+         border-bottom: solid var(--LightestGrey) 1px;
+      }
+      tr{
+        &:hover{
+          @include Pointer;
+          background-color: var(--LightestGrey);
+        }
+        .delete-icon{
+          @include Transition;
+          @include BackgroundAdjustments;
+          height: 25px;
+          width: 25px;
+          background-image: url("/src/icons/Trash.svg");
+          background-size: 70%;
+          border: solid 1px rgba(255, 255, 255, 0);
+          padding: 10px;
+          border-radius: 100%;
+          &:hover{
+            border: solid 1px var(--TextDark);
+          }
+        }
+
+      }
+    }
+  }
+}
+
+table, th, td{
+  text-align: left;
+  padding: 15px 20px !important;  
+  border-collapse: collapse;
+}
+

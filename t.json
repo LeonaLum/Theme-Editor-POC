@@ -1,0 +1,1428 @@
+{
+  "id": "95533d82-12f9-480c-836c-82690hh819",
+  "subHeading": "Radiobutton",
+  "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]",
+  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+  "attributes": [
+
+    {
+      "id": "230e345h2j1d-3c50-450c-88ae-3f232fc6",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+      "name": "Height",
+      "type": "text",
+      "defaultUnit": "em",
+      "output": "height: {0}",
+      "default": [
+        "initial"
+      ]
+    },
+    {
+      "id": "87ceaefc-1xx-496f-aa7d-1c934jk4532a3",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+      "name": "Width",
+      "type": "text",
+      "defaultUnit": "em",
+      "output": "width: {0}rem",
+      "default": [
+        "initial"
+      ]
+    },
+    {
+      "id": "31e0779d-120d-4a4c-9038-d775efdsgted3",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+      "name": "Color",
+      "type": "text",
+      "output": "accent-color: {0}",
+      "default": [
+        "none"
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "id": "95533d82-12f9-480c-836c-82690aaaaa819",
+  "subHeading": "Checkbox",
+  "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]",
+  "selectorId": "9vvvc93-af0d-4a2b-907f-d844ebui94",
+  "attributes": [
+
+    {
+      "id": "230e345h2j1d-3c50-450c-88ae-3aaaa6",
+      "selectorId": "9vvvc93-af0d-4a2b-907f-d844ebui94",
+      "name": "Height",
+      "type": "text",
+      "defaultUnit": "em",
+      "output": "height: {0}",
+      "default": [
+        "initial"
+      ]
+    },
+    {
+      "id": "8auyyefc-1xx-496f-aa7d-1c934jk4532a3",
+      "selectorId": "9vvvc93-af0d-4a2b-907f-d844ebui94",
+      "name": "Width",
+      "type": "text",
+      "defaultUnit": "em",
+      "output": "width: {0}rem",
+      "default": [
+        "initial"
+      ]
+    },
+    {
+      "id": "31epooo9d-120d-4a4c-9038-d775efdsgted3",
+      "selectorId": "9vvvc93-af0d-4a2b-907f-d844ebui94",
+      "name": "Color",
+      "type": "text",
+      "output": "accent-color: {0}",
+      "default": [
+        "none"
+      ]
+    }
+  ]
+}
+
+
+
+
+
+// ALL NAVIGATION BUTTONS
+
+{
+  "id": "95533d82-12f9-480c-836c-826906448819",
+  "subHeading": "All Navigation Buttons",
+  "selector": ".Survey .Navigation button",
+  "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+  "attributes": [
+    {
+      "id": "e2caab20-e7e3-404f-b42a-a44167akb925",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Background Color",
+      "type": "text",
+      "output": "background-color: {0}",
+      "default": [
+        "initial"
+      ]
+    },
+    {
+      "id": "e2caab20-e7e3-404f-b42a-a441x7acb925",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Box Shadow",
+      "type": "text",
+      "output": "box-shadow: {0}",
+      "default": [
+        "0 1px 6px 0 rgba(0, 0, 0, 0.30)"
+      ]
+    },
+    {
+      "id": "b6ec0b82-ffcd-4f8a-a320-bc7621243c80",
+      "name": "Border Width",
+      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+      "multipleInputs": [
+        {
+          "id": "1455efd2-5d71-4b30-ab9b-f35dc6auyrtrp",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "top",
+          "output": "border-top-width: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "24bffc6e-d798-4d3d-87b0-12ughjk5772dc",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "right",
+          "output": "border-right-width: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "8ab053fe-ddd1-4b65-83ce-d1e3064063df",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "bottom",
+          "output": "border-bottom-width: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "ed43eb38-13f1-4731-82aa-a35d784820a7",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "left",
+          "output": "border-left-width: {0}",
+          "default": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95d37ce3-e9b4-449b-8115-394b2dc78cfc",
+      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+      "name": "Border Color",
+      "multipleInputs": [
+        {
+          "id": "d49ea55f-f0e4-4672-8bba-9120dabe44d2",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "top",
+          "output": "border-top-color: {0}",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "c939ea59-cc2d-484c-acc1-a0c24oiyuui3c0c",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "right",
+          "output": "border-right-color: {0}",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "3bb76704-05fa-4d26-84f0-9bc91e58225a",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "bottom",
+          "output": "border-bottom-color: {0}",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "7bbytuid0-b610-429e-a0f7-127001831ff6",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "left",
+          "output": "border-left-color: {0}",
+          "default": [
+            "none"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae20dea6-d696-4d22-95d9-8aff1440287c",
+      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+      "name": "Border Style",
+      "multipleInputs": [
+        {
+          "id": "b754093a-2001-4535-9788-a2739607b1a6",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "top",
+          "alternatives": "borderStyles",
+          "output": "border-top-style: {0}",
+          "default": [
+            "solid"
+          ]
+        },
+        {
+          "id": "0b22610d-c33d-4288-95e5-d9672ec70516",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "right",
+          "alternatives": "borderStyles",
+          "output": "border-right-style: {0}",
+          "default": [
+            "solid"
+          ]
+        },
+        {
+          "id": "769aeac2-62c8-4303-a308-1870fde7d3b5",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "bottom",
+          "alternatives": "borderStyles",
+          "output": "border-bottom-style: {0}",
+          "default": [
+            "solid"
+          ]
+        },
+        {
+          "id": "7nd8fa3c-b116-47d4-abb2-a374766d9c70",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "type": "text",
+          "boxModelOption": "left",
+          "alternatives": "borderStyles",
+          "output": "border-left-style: {0}",
+          "default": [
+            "solid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b6ec0b82-ffcd-4f8a-a320-bc762aaa3c80",
+      "name": "Border Radius",
+      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+      "multipleInputs": [
+        {
+          "id": "1237221e-073e-4182-9708-8c966a759242",
+          "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "top left",
+          "output": "border-top-left-radius: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "bde0fde3-9bd0-4a40-8ca2-6b8797h28b",
+          "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "top right",
+          "output": "border-top-right-radius: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3f763768569b6e",
+          "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "bottom right",
+          "output": "border-bottom-right-radius: {0}",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "4009857a-becc-40ee-ae83-eabed7f7f05b",
+          "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "bottom left",
+          "output": "border-bottom-left-radius: {0}",
+          "default": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e2060e8d-d0cf-4f88-bc03-5d345f2b2a08",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Padding",
+      "multipleInputs": [
+        {
+          "id": "c71aee67-da35-4023-aff9-034bdc304bd9",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "top",
+          "output": "padding-top: {0}",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "1455egd2-5d71-4b30-ab9b-f35vhjmhvgkht",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "right",
+          "output": "padding-right: {0}",
+          "default": [
+            "10"
+          ]
+        },
+        {
+          "id": "1455efd2-5d71-4b30-ab9b-f35dc6bottom",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "bottom",
+          "output": "padding-bottom: {0}",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "a9ba874f-212a-4692-97fe-e7c4fb4a6b93",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "left",
+          "output": "padding-left: {0}",
+          "default": [
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f45e1c46-e04c-445e-9196-2f012f31d40a",
+      "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+      "name": "Margin",
+      "multipleInputs": [
+        {
+          "id": "1455efd2-5d71-4b30-ab9b-f35h76aeatop",
+          "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "top",
+          "output": "margin-top: {0}",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "1455675872-5d71-4b30-ab9b-f35dc6fhdright",
+          "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "right",
+          "output": "margin-right: {0}",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "33635db7-adfc-4025-a3d9-8067e615c56f",
+          "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "bottom",
+          "output": "margin-bottom: {0}",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "2c53acb2-9ea4-483f-b5a9-2620135983bc",
+          "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+          "type": "text",
+          "defaultUnit": "px",
+          "boxModelOption": "left",
+          "output": "margin-left: {0}",
+          "default": [
+            "5"
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+// ALL NAVIGATION BUTTONS TEXT
+
+{
+  "id": "95533d82-12f9-480c-836c-826906d38819",
+  "subHeading": "All Navigation Buttons Text",
+  "selector": ".Survey .Navigation button span",
+  "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+  "attributes": [
+    {
+      "id": "87ceaefc-16d0-496f-aa7d-1c9f50f4d0a3",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Font-Size",
+      "type": "text",
+      "defaultUnit": "px",
+      "output": "font-size: {0}rem",
+      "default": [
+        "14"
+      ]
+    },
+    {
+      "id": "230eb51d-3c50-450c-88ae-3f2ecca505c6",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Font-Weight",
+      "type": "text",
+      "output": "font-weight: {0}",
+      "default": [
+        "600"
+      ]
+    },
+    {
+      "id": "e6e46f4e-b1sdvyyccccce-901c-sdv43444437f",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb1f0594",
+      "name": "Text Transform",
+      "type": "text",
+      "alternatives": "textTransform",
+      "output": "text-transform: {0}rem",
+      "default": [
+        "initial"
+      ]
+    }
+  ]
+}
+
+
+//INPUT
+
+{
+  "id": "59e19f2b-a028-4ed1-9da2-d5f311accb8a",
+  "mainHeading": "Inputs",
+  "subOptions": [
+    {
+      "id": "477b295f-5c6f-497b-9380-08664878e69b",
+      "subHeading": "All Input Fields",
+      "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+      "attributes": [
+        {
+          "id": "675a7bae-c3e6-4a90-b112-8ebfc33a1712",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "name": "Width",
+          "type": "text",
+          "cssProperty": "width: ",
+          "default": [
+            "100%"
+          ]
+        },
+        {
+          "id": "675a7bae-c3e6-4a90-b112-8edsfa9808712",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "name": "Background Color",
+          "type": "color",
+          "cssProperty": "background-color: ",
+          "default": [
+            "#FFFFFF"
+          ]
+        },
+        {
+          "id": "b6ec0b82-ffcd-4f8a-a320-bc7621aaac80",
+          "name": "Border Width",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "multipleInputs": [
+            {
+              "id": "1455efd2-5d71-4b30-ab9b-f35dc6aaaatop",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top",
+              "cssProperty": "border-top-width: ",
+              "default": [
+                "1"
+              ]
+            },
+            {
+              "id": "24bffc6e-d798-4d3d-87b0-12a86e5772dc",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "right",
+              "cssProperty": "border-right-width: ",
+              "default": [
+                "1"
+              ]
+            },
+            {
+              "id": "8ab053ferttyud1-4b65-83ce-d1e3064063df",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom",
+              "cssProperty": "border-bottom-width: ",
+              "default": [
+                "1"
+              ]
+            },
+            {
+              "id": "ed43eb38-13f1-4731-82aa-a35duygi820a7",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "left",
+              "cssProperty": "border-left-width: ",
+              "default": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "95d37ce3-e9b4-449b-8115-394b2dc78cfc",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "name": "Border Color",
+          "multipleInputs": [
+            {
+              "id": "d49ea55f-f0e4-4672-poopa-9120dabe44d2",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "color",
+              "boxModelOption": "top",
+              "cssProperty": "border-top-color: ",
+              "default": [
+                "#d9d9d9"
+              ]
+            },
+            {
+              "id": "c939ea59-cc2d-484c-acc1-a0c24b793c0c",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "color",
+              "boxModelOption": "right",
+              "cssProperty": "border-right-color: ",
+              "default": [
+                "#d9d9d9"
+              ]
+            },
+            {
+              "id": "oppy6704-05fa-4d26-84f0-9bc91e58225a",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "color",
+              "boxModelOption": "bottom",
+              "cssProperty": "border-bottom-color: ",
+              "default": [
+                "#d9d9d9"
+              ]
+            },
+            {
+              "id": "7bb818d0-b610-429e-a0f7-127001831ff6",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "color",
+              "boxModelOption": "left",
+              "cssProperty": "border-left-color: ",
+              "default": [
+                "#d9d9d9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ae20dea6-d696-4d22-95d9-8aff1440287c",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "name": "Border Style",
+          "multipleInputs": [
+            {
+              "id": "b754093a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "boxModelOption": "top",
+              "alternatives": "borderStyles",
+              "cssProperty": "border-top-style: ",
+              "default": [
+                "solid"
+              ]
+            },
+            {
+              "id": "0b22610d-c33d-4288-95e5-d9672ec70516",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "boxModelOption": "right",
+              "alternatives": "borderStyles",
+              "cssProperty": "border-right-style: ",
+              "default": [
+                "solid"
+              ]
+            },
+            {
+              "id": "769aeac2-62c8-4303-a308-1870fde7d3b5",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "boxModelOption": "bottom",
+              "alternatives": "borderStyles",
+              "cssProperty": "border-bottom-style: ",
+              "default": [
+                "solid"
+              ]
+            },
+            {
+              "id": "4128fa3c-b116-47d4-abb2-a3747364d9c70",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "boxModelOption": "left",
+              "alternatives": "borderStyles",
+              "cssProperty": "border-left-style: ",
+              "default": [
+                "solid"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "baop2-ffcd-4f8a-a3ervwd7767-67c80",
+          "name": "Border Radius",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "multipleInputs": [
+            {
+              "id": "1237221e-073e-41evorm08-8kssssss",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top left",
+              "cssProperty": "border-top-left-radius: ",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "bdapv9-9bd0-4a40-8ca2-6b8797h28b",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top right",
+              "cssProperty": "border-top-right-radius: ",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "57f870df-6e01-4a28-9216-3fccmmooo-49b688e",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom right",
+              "cssProperty": "border-bottom-right-radius: ",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "400-0071a-becc-40ee-vkkmnnn53-eabed7f7f05b",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom left",
+              "cssProperty": "border-bottom-left-radius: ",
+              "default": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d27afebf-a854-4932-a58b-5483fba09ac0",
+          "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+          "name": "Padding",
+          "multipleInputs": [
+            {
+              "id": "1455efd2-5d71-4b30-ab9b-f35d449eatop",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top",
+              "cssProperty": "padding-top: ",
+              "default": [
+                "5"
+              ]
+            },
+            {
+              "id": "1455efd2-5d71-4b30-ab9b-f35dc6aright",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "right",
+              "cssProperty": "padding-right: ",
+              "default": [
+                "5"
+              ]
+            },
+            {
+              "id": "dce39f95-951e-46f9-b404-76e879185ef6",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom",
+              "cssProperty": "padding-bottom: ",
+              "default": [
+                "5"
+              ]
+            },
+            {
+              "id": "855a7e71-3da9-439c-b90e-c921fdfe20dc",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "left",
+              "cssProperty": "padding-left: ",
+              "default": [
+                "5"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "477b295f-5c6f-497b-9380-0aaoopptyu8e69b",
+      "subHeading": "All Inputs Hover (Mouse over)",
+      "selector": ".Survey .Answers input[type=\"text\"]:hover, .Survey .Question .Answers input[type=\"password\"]:hover, .Survey .Question .Answers input[type=\"email\"]:hover, .Survey .Question .Answers select:hover, .Survey textarea:hover, .Survey .qtDropDown select:hover, .Survey qtAutoComplete input[type=\"text\"]:hover, .Survey .qtCustom input[type=\"text\"]:hover",
+      "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+      "attributes": [
+        {
+          "id": "6aotopue-c3e6-4a90-b112-vnuyy9808712",
+          "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+          "name": "Background Color",
+          "type": "text",
+          "variableForPseudo": "--inputHoverBackgroundColor",
+          "cssProperty": "background-color: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "95d37ce3-olmmb4-avvio9b-8115-394b2dc78cfc",
+          "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+          "name": "Border Color",
+          "type": "text",
+          "variableForPseudo": "--inputHoverBackgroundColor",
+          "cssProperty": "border-color: ",
+          "default": [
+            "#d9d9d9"
+          ]
+        },
+        {
+          "id": "aeaop6-d696-vuop2-95d9-8aff1440287c",
+          "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+          "name": "Border Style",
+          "type": "text",
+          "alternatives": "borderStyles",
+          "cssProperty": "border-style: ",
+          "default": [
+            "solid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-82690hh819",
+      "subHeading": "Radiobutton - Unchecked",
+      "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+      "attributes": [
+        {
+          "id": "230eb51d-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Appearance",
+          "type": "text",
+          "cssProperty": "-webkit-appearance: ",
+          "default": [
+            "block"
+          ]
+        },
+        {
+          "id": "230eb51d-3c50-4eeuec-34hje-3cofvfc6",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Position",
+          "type": "text",
+          "cssProperty": "position: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "230e345h2j1d-3c50-450c-88ae-3f232fc6",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Height",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "height: ",
+          "default": [
+            "15"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c934jk4532a3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Width",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "width:",
+          "default": [
+            "15"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-d775efdsgted3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c9vfvr0a3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Width",
+          "type": "text",
+          "cssProperty": "border-width:",
+          "defaultUnit": "px",
+          "default": [
+            "1"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c9vyui0a3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Style",
+          "type": "text",
+          "cssProperty": "border-style:",
+          "default": [
+            "solid"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c9a32fsd0a3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Color",
+          "type": "text",
+          "cssProperty": "border-color:",
+          "default": [
+            "currentColor"
+          ]
+        },
+        {
+          "id": "87ceaefc-16d0-496f-aa7d-1crrwevbsd0a3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Radius",
+          "type": "text",
+          "defaultUnit": "%",
+          "cssProperty": "border-radius:",
+          "default": [
+            "50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-82690hh-riuuuiooo819",
+      "subHeading": "Radiobutton - Checked",
+      "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked",
+      "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+      "attributes": [
+        {
+          "id": "31e0779d-120d-4a4c-9038-d775eoppp-oteeyettpted3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c9a3opllmnb3",
+          "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+          "name": "Border Color",
+          "type": "text",
+          "cssProperty": "border-color:",
+          "default": [
+            "currentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-82635242345h819",
+      "subHeading": "Radiobutton Dot - Unchecked",
+      "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]::before",
+      "isPseudoElement": "::before",
+      "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+      "attributes": [
+        {
+          "id": "2433hveaaaa1d-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Content",
+          "type": "text",
+          "cssProperty": "content: ",
+          "variableForPseudo": "--radioContent",
+          "default": [
+            "' '"
+          ]
+        },
+        {
+          "id": "2433hveewrqa1d-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Position",
+          "type": "text",
+          "cssProperty": "position: ",
+          "variableForPseudo": "--radioPositionDot",
+          "default": [
+            "absolute"
+          ]
+        },
+        {
+          "id": "230ej3h2kaa1d-3c50-nnvv0c-34hje-3cofvfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Display",
+          "type": "text",
+          "cssProperty": "display: ",
+          "variableForPseudo": "--radioDisplay",
+          "default": [
+            "inline-block"
+          ]
+        },
+        {
+          "id": "2323j4khk251d-3c50-450c-34hje-3cofdfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Opacity",
+          "type": "text",
+          "cssProperty": "opacity: ",
+          "variableForPseudo": "--radioOpacityUnchecked",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "2aamm1d-3c5043j35h0c-34hje-aaooppc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Transition",
+          "type": "text",
+          "cssProperty": "transition: ",
+          "variableForPseudo": "--radioTransition",
+          "default": [
+            "120ms transform ease-in-out"
+          ]
+        },
+        {
+          "id": "230aa34jhk63id-3c50-450c-88ae-3f232fc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Height",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "height: ",
+          "variableForPseudo": "--radioHeight",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "87copuyyc-1xx-496f-aa7d-14325jhka3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Width",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "width:",
+          "variableForPseudo": "--radioWidth",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "3aaioo9d-120d-4a4c-9038-d73425hjkd3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "variableForPseudo": "--radioBackgroundColor",
+          "default": [
+            "red"
+          ]
+        },
+        {
+          "id": "87ceaefc-16d0-496f-aa73425bjk3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Border Radius",
+          "type": "text",
+          "defaultUnit": "%",
+          "cssProperty": "border-radius:",
+          "variableForPseudo": "--radioBorderRadius",
+          "default": [
+            "50"
+          ]
+        },
+        {
+          "id": "ae20dea6-d696-7689022-95d9-8dfdsb78vas9c",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+          "name": "Position Of Dot",
+          "multipleInputs": [
+            {
+              "id": "b75fddsb908v73a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top",
+              "cssProperty": "top: ",
+              "variableForPseudo": "--radioPositionTop",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "b75raaghfndhgs9a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "right",
+              "cssProperty": "right: ",
+              "variableForPseudo": "--radioPositionRight",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "b7524364368a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom",
+              "cssProperty": "bottom: ",
+              "variableForPseudo": "--radioPositionBottom",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "b752334wty5j28a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "left",
+              "cssProperty": "left: ",
+              "variableForPseudo": "--radioPositionLeft",
+              "default": [
+                "0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-82635244325jhbk819",
+      "subHeading": "Radiobutton Dot - Checked",
+      "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked::before",
+      "isPseudoElement": "::before",
+      "selectorId": "9caaauuoo3-af0d-4a2b-907f-d84aaai94",
+      "attributes": [
+        {
+          "id": "2303425hlaa1d-3c50-450c-34hje-3cdfdg6",
+          "selectorId": "9caaauuoo3-af0d-4a2b-907f-d84aaai94",
+          "name": "Opacity",
+          "type": "text",
+          "cssProperty": "opacity: ",
+          "variableForPseudo": "--radioOpacityChecked",
+          "default": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95sdawfsadd82-12f9-480c-836c-82690hh819",
+      "subHeading": "Checkbox - Unchecked",
+      "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]",
+      "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+      "attributes": [
+        {
+          "id": "230euiiuoi-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Appearance",
+          "type": "text",
+          "cssProperty": "-webkit-appearance: ",
+          "default": [
+            "block"
+          ]
+        },
+        {
+          "id": "230eb51d-3c50-4e897ghhuyc-34hje-3cofvfc6",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Position",
+          "type": "text",
+          "cssProperty": "position: ",
+          "default": [
+            "relative"
+          ]
+        },
+        {
+          "id": "235768902j1d-3c50-450c-88ae-3f232fc6",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Height",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "height: ",
+          "default": [
+            "15"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c93879ghj532a3",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Width",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "width:",
+          "default": [
+            "15"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-d77879gfd3",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-476890f-aa7d-1c9vfvr0a3",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Width",
+          "type": "text",
+          "cssProperty": "border-width:",
+          "defaultUnit": "px",
+          "default": [
+            "1"
+          ]
+        },
+        {
+          "id": "87ceaefc-1xx-496f-aa7d-1c9vy909000",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Style",
+          "type": "text",
+          "cssProperty": "border-style:",
+          "default": [
+            "solid"
+          ]
+        },
+        {
+          "id": "87768hgfc-1xx-496f-aa7d-1c9a32fsd0a3",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Color",
+          "type": "text",
+          "cssProperty": "border-color:",
+          "default": [
+            "currentColor"
+          ]
+        },
+        {
+          "id": "87c6789ghc-16d0-496f-aa7d-1crrw768gh3",
+          "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Radius",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "border-radius:",
+          "default": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95sdawfsadd82-12f9-480c-836c-8aaaoopppp819",
+      "subHeading": "Checkbox - Checked",
+      "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]:checked",
+      "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+      "attributes": [
+        {
+          "id": "31e0779d-120d-4a4c-9038-d77errrppppd3",
+          "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "default": [
+            "none"
+          ]
+        },
+        {
+          "id": "87768hgfc-1xx-496f-aa7d-1c9a32fs-yryririr0a3",
+          "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+          "name": "Border Color",
+          "type": "text",
+          "cssProperty": "border-color:",
+          "default": [
+            "currentColor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-827689gf19",
+      "subHeading": "Checkbox Checkmark",
+      "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]::before",
+      "isPseudoElement": "::before",
+      "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+      "attributes": [
+        {
+          "id": "2900veaaaa1d-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Content",
+          "type": "text",
+          "cssProperty": "content: ",
+          "variableForPseudo": "--checkboxContent",
+          "default": [
+            "' '"
+          ]
+        },
+        {
+          "id": "2433h7681d-3c50-450c-34hje-3cofvfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Position",
+          "type": "text",
+          "cssProperty": "position: ",
+          "variableForPseudo": "--checkboxPositionCheck",
+          "default": [
+            "absolute"
+          ]
+        },
+        {
+          "id": "230ej3h2kaa1d-3c50-nnvv0c-34hje-3c3421hjc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Display",
+          "type": "text",
+          "cssProperty": "display: ",
+          "variableForPseudo": "--checkboxDisplay",
+          "default": [
+            "inline-block"
+          ]
+        },
+        {
+          "id": "2323j89889983c50-450c-34hje-3cofdfc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Opacity",
+          "type": "text",
+          "cssProperty": "opacity: ",
+          "variableForPseudo": "--checkboxOpacityUnchecked",
+          "default": [
+            "0"
+          ]
+        },
+        {
+          "id": "2aamm1d-3c5043j35h0c-7689hge-aaooppc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Transition",
+          "type": "text",
+          "cssProperty": "transition: ",
+          "variableForPseudo": "--checkboxTransition",
+          "default": [
+            "120ms transform ease-in-out"
+          ]
+        },
+        {
+          "id": "230aa3488id-3c50-450c-88ae-3f232fc6",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Height",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "height: ",
+          "variableForPseudo": "--checkboxHeight",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "87caaaoop-1xx-496f-aa7d-14325jhka3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Width",
+          "type": "text",
+          "defaultUnit": "px",
+          "cssProperty": "width:",
+          "variableForPseudo": "--checkboxWidth",
+          "default": [
+            "5"
+          ]
+        },
+        {
+          "id": "3aaioo9d-120d-4a4c-9038-2229hhjkd3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Background Color",
+          "type": "text",
+          "cssProperty": "background-color: ",
+          "variableForPseudo": "--checkboxBackgroundColor",
+          "default": [
+            "red"
+          ]
+        },
+        {
+          "id": "87ceaefc-qioooo-496f-aa73425bjk3",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Clip Path",
+          "type": "text",
+          "cssProperty": "clip-path:",
+          "variableForPseudo": "--checkboxCheck",
+          "default": [
+            "polygon(13% 39%,3% 41%,0 49%,3% 61%, 32% 96%,39% 100%,50% 100%, 56% 95%,100% 15%,99% 4%,86% 1%,76% 6%,41% 70%)"
+          ]
+        },
+        {
+          "id": "ae20dea6-d696-7689022-95d9-432hj32jhas9c",
+          "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+          "name": "Position Of Checkmark",
+          "multipleInputs": [
+            {
+              "id": "b75fddsbyyuuua-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "top",
+              "cssProperty": "top: ",
+              "variableForPseudo": "--checkboxPositionTop",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "b75raaghfndhgs9a-2001ai8ioi5-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "right",
+              "cssProperty": "right: ",
+              "variableForPseudo": "--checkboxPositionRight",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "b75aoopoio68a-2001-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "bottom",
+              "cssProperty": "bottom: ",
+              "variableForPseudo": "--checkboxPositionBottom",
+              "default": [
+                "0"
+              ]
+            },
+            {
+              "id": "biiopppy5j28a-2ozc1-4535-9788-a2cv7b1a6",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+              "type": "text",
+              "defaultUnit": "px",
+              "boxModelOption": "left",
+              "cssProperty": "left: ",
+              "variableForPseudo": "--checkboxPositionLeft",
+              "default": [
+                "0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95533d82-12f9-480c-836c-826aaaooppbk819",
+      "subHeading": "Checkbox Checkmark - Checked",
+      "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked::before",
+      "isPseudoElement": "::before",
+      "selectorId": "9caaaaapopoio3-af0d-4a2b-907f-d84aaai94",
+      "attributes": [
+        {
+          "id": "23apoouyyd-3c50-450c-34hje-3cdfdg6",
+          "selectorId": "9caaaaapopoio3-af0d-4a2b-907f-d84aaai94",
+          "name": "Opacity",
+          "type": "text",
+          "cssProperty": "opacity: ",
+          "variableForPseudo": "--checkboxOpacityChecked",
+          "default": [
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

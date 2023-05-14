@@ -1,0 +1,64 @@
+@mixin Flexbox ($direction, $alignment, $justify){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignment;
+  justify-content: $justify;
+}
+
+@mixin Radius{
+  border-radius: 5px;
+}
+@mixin RadiusStrong{
+  border-radius: 20px;
+}
+@mixin Pointer{
+  cursor: pointer;
+}
+@mixin BoxShadow{
+  box-shadow: 0 0.4rem 0.8rem #0005;
+}
+@mixin BoxShadowSoft{
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+@mixin Transition{
+  transition: all ease-in 0.2s;
+}
+@mixin Scrollbar{ 
+  &::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb{
+    @include Radius;
+    @include Transition;
+    background-color: var(--LightGrey);
+    visibility: hidden;
+  }
+  &:hover::-webkit-scrollbar-thumb{
+    @include Transition;
+    visibility: visible;
+  }
+}
+
+@mixin BackgroundAdjustments{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin InputField{
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 2px;
+  padding-left: 5px;
+  font-size: 0.7em;
+
+  &:focus{
+    outline: none;
+    border-color: rgb(38, 121, 255) !important;    
+  }
+  &:hover{
+    outline: none;
+    border-color: rgb(38, 121, 255) !important;    
+  }
+}

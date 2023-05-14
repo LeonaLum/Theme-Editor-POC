@@ -1,0 +1,4122 @@
+{
+  "types": [
+    {
+      "id": "8e8a2d57-f8d6-4cfb-be6d-aa0a45fcfc83",
+      "name": "Form builder",
+      "previewHtml": "<div class=\"Preview SurveyTrigger\"><div class=\"Survey\"><div class=\"SurveyBody\"><div><div class=\"Page\"><div class=\"Header\"><div class=\"Name\">Page</div><div class=\"Description\">Page Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div><div class=\"Body\"><div class=\"Sections\"><div class=\"Section\"><div class=\"Header\"><div class=\"Name\">Section</div><div class=\"Description\">Section Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div><div class=\"Questions\"><div class=\"Question\"><div class=\"qtTextRow\"><div class=\"Header\"><div class=\"QuestionText\" title=\"Question\"><span class=\"Name\">Question</span></div><div class=\"DescriptionText\"><span>Question Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div></div><div class=\"Answers\"><div class=\"Answer\"><input type=\"text\"/></div></div></div></div><div class=\"Question\"><div class=\"qtRadio\"><div class=\"Header\"><div class=\"QuestionText\" title=\"Radio button\"><span class=\"Name\" >Radio button Question</span></div></div><div class=\"Answers\"><div class=\"Answer\"><label><span class=\"ColorDisplay\" style=\"background-color: transparent;\"><input type=\"radio\"></span><span>Radio button Answer</span></label></div></div></div></div><div class=\"Question\"><div class=\"qtCheckbox\"><div class=\"Header\"><div class=\"QuestionText\"  title=\"Checkboxes\"><span class=\"Name\">Checkboxes Question</span></div></div><div class=\"Answers\"><div class=\"Answer\"><label><span class=\"ColorDisplay\" style=\"background-color: transparent;\"><input type=\"checkbox\"></span><span>Checkbox Answer</span></label></div></div></div></div></div></div></div></div></div><div class=\"Navigation\"><button type=\"button\" class=\"CloseButton\"><span>Close</span></button><button type=\"button\"class=\"PrevButton\"><span>Previous page</span></button><button type=\"button\" class=\"NextButton\"><span>Next page</span></button><button type=\"button\" class=\"NextButton\"><span>Finish and lock</span></button></div></div></div></div></div>",
+      "selectors": [
+        {
+          "id": "e6a5e73b-2a9a-4912-8a78-555ffcab1cb2",
+          "mainHeading": "Form",
+          "subOptions": [
+            {
+              "id": "d8874356-1678-45d2-a43f-15b829ec2a9b",
+              "subHeading": "Form",
+              "selector": ".Survey",
+              "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+              "attributes": [
+                {
+                  "id": "b29be304-8fdc-4b78-95b0-e0c8eeab525b",
+                  "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                  "name": "Background of form color",
+                  "type": "color",
+                  "cssProperty": "background-color:",
+                  "default": [
+                    "#ffffff"
+                  ]
+                },
+                {
+                  "id": "9536472d-1f64-41ef-98e5-6821f1549a0d",
+                  "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                  "name": "Box Shadow",
+                  "type": "text",
+                  "cssProperty": "box-shadow: ",
+                  "default": [
+                    "0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0,0,0,0.12)"
+                  ]
+                },
+                {
+                  "id": "b6ec0b82-ffcd-4f8a-a320-bc762aaa3c80",
+                  "name": "Border Radius",
+                  "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                  "multipleInputs": [
+                    {
+                      "id": "1237bjh5e-073e-4182-9708-8c966a759242",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "bde0fde3-9bd0-4a40-8ca2-6b1d0762d28b",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "57f870df-6e01-4a28-9216-3f763da04b6e",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "4009857a-becc-40ee-ae83-eabed678f05b",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "5"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1455efd2-5d71-4b30-ab9b-f35dc6aea74c",
+                  "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "607c3b21-e008-4316-a65f-95461ec05ff0",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "%",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "59db50e2-7e46-4a06-b60b-a2684323e2a3",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "%",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "71f8c904-5aac-40f7-9749-8aebcc72c329",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "%",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "46616f12-f9d1-4420-875b-60655e879d58",
+                      "selectorId": "0f1898ed-55d5-4099-bb3d-e575a866b412",
+                      "type": "text",
+                      "defaultUnit": "%",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "4"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d8aoppprb6-1678-45d2-a43f-15b829ec2a9b",
+              "subHeading": "Form Font",
+              "selector": ".Survey, .Survey button span",
+              "selectorId": "ioed-55d5-4099-bb3d-e57202",
+              "attributes": [
+                {
+                  "id": "oopru9-d9bc-4a67-afd4-8b1b4190fbb1",
+                  "selectorId": "ioed-55d5-4099-bb3d-e572022",
+                  "name": "Font-family",
+                  "type": "text",
+                  "cssProperty": "font-family: ",
+                  "default": [
+                    "Open Sans, Verdana, Helvetica, Sans-Serif"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "18586d43-87a6-46be-a27d-719e82e8ef57",
+              "subHeading": "Form Body",
+              "selector": ".Survey .SurveyBody",
+              "selectorId": "1768ab96-dbd3-4fcf-9633-9c4c7ddf7d14",
+              "attributes": [
+                {
+                  "id": "44eafac7-3fe2-4477-8ce6-5870a696f6a6",
+                  "selectorId": "1768ab96-dbd3-4fcf-9633-9c4c7ddf7d14",
+                  "name": "Background-Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#ffffff"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a25fd44e-4c21-47b3-a258-be274e746889",
+              "subHeading": "Global Colors",
+              "selector": ":root",
+              "selectorId": "13b35e41-1b4d-4b7a-a280-d73170738aca",
+              "attributes": [
+                {
+                  "id": "44eafac7-3fe2-4477-8ce6-58706696f6a6",
+                  "selectorId": "13b35e41-1b4d-4b7a-a280-d73170738aca",
+                  "name": "Primary Color",
+                  "type": "text",
+                  "cssProperty": "--Primary: ",
+                  "default": [
+                    "yellow"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f3606a28-b109-401c-84cf-c679ae430ad4",
+          "mainHeading": "Page",
+          "subOptions": [
+            {
+              "id": "a25fd44e-4c21-47b3-a218-be274ju46889",
+              "subHeading": "Page Text",
+              "selector": ".Survey .Page > .Header .Name",
+              "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+              "previewText": "Page",
+              "attributes": [
+                {
+                  "id": "e6e65f4e-b1cf-44ee-901c-af7be341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "21"
+                  ]
+                },
+                {
+                  "id": "8e8e633c-95d4-4456-827e-5a2wefa7887334",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font-Thickness",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-afrrryuu7f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Align",
+                  "type": "text",
+                  "alternatives": "textAlign",
+                  "cssProperty": "text-align:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-afjklgh341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "9304e7fb-32c9-41eb-b1fd-a8e2d62c2079",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                },
+                {
+                  "id": "82cbc2e1-18e2-4fc1-8e7b-2baooop0d3ef5",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Background color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e818caaa-b3cb-44a2-a3e6-89818dfdc184",
+              "subHeading": "Page Text Block",
+              "selector": ".Survey .Page > .Header",
+              "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+              "attributes": [
+                {
+                  "id": "067a9d4b-0504-4b84-9e25-663asda7814",
+                  "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bdsvwddvu4ae1",
+                  "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff789yhy1-73fe-4265-803b-0e548rtbef5f21",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-erwe7-4b30-ab9b-f35dc6aright",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "04bgfvd286-vvvio8-46ea-acef-4cc81d61be6c",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "edeee0927-5527-4a80-806b-c9415386a907",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "initial"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "46131eca-36f2-4022-8f12-11f4da65f634",
+                  "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "9b77b73b-f781-4419-840f-d53655e81b19",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "7"
+                      ]
+                    },
+                    {
+                      "id": "1453gdgfd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "bf00d38d-5d24-4598-80c8-b9cd2f23ebe3",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "e4984ad1-da4d-4ea6-95c3-e11030cbe754",
+                      "selectorId": "fb932f42-dd02-4a01-9dd6-fab451812e85",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a25kd44e-4c21-47b3-a218-be274e746889",
+              "subHeading": "Page Description",
+              "selector": ".Survey .Page > .Header .Description",
+              "toggleVisibility": true,
+              "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+              "previewText": "Page Description lorem ipsum dolor",
+              "attributes": [
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-af7be341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-afjkpce341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "normal"
+                  ]
+                },
+                {
+                  "id": "ebbvf4e-apf-44ee-00000-afrrryuu7f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Align",
+                  "type": "text",
+                  "alternatives": "textAlign",
+                  "cssProperty": "text-align:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "3re46f4e-b1cf-44ee-901c-afjklke341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "9304e7fb-32c9-41eb-b1fd-a8e2d62c2079",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                },
+                {
+                  "id": "8ortp2e1-18e2-4fc1-8e7b-2b5aef0d3ef5",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Background color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bd8799094ae1",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff36e921-73fe-4265-803b-0e548fd85f21",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "04ff4286-28b8-46ea-acef-4cctngrbfv6c",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "ed2ccc27-5527-4a80-806b-c9415386a907",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25fd44e-4c21-47b3-a218-be276e746889",
+          "mainHeading": "Section",
+          "subOptions": [
+            {
+              "id": "d4cf0d81-105c-436a-a3c4-55e7dff63fad",
+              "subHeading": "Section Text",
+              "previewText": "Section",
+              "selector": ".Survey .Section > .Header .Name",
+              "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+              "attributes": [
+                {
+                  "id": "9e8e633c-95d4-4456-827e-5a2a1bd37334",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "8e8e633c-95d4-4456-827e-5a2a1cd37334",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Font-Thickness",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "bold"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-4aayuu-901c-afrrryuu7f",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Text Align",
+                  "type": "text",
+                  "alternatives": "textAlign",
+                  "cssProperty": "text-align:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-afjaaaoooppb37f",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "403b2e2e-10b2-4319-8723-989f17dfcdb7",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "067a9d4b-0504-4b84-9e25-663a6745c314",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#135167"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bd8799094ae1",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff36e921-73fe-4265-803b-0e548rtbef5f21",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "7"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "7"
+                      ]
+                    },
+                    {
+                      "id": "04bgfvd286-28b8-46ea-acef-4cc81d61be6c",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "7"
+                      ]
+                    },
+                    {
+                      "id": "ed2ccc27-5527-4a80-806b-c9415386a907",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "7"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1d9289bd-2d56-44f2-8067-3b21d3a1ed84",
+              "subHeading": "Sections",
+              "selector": ".Survey .Sections .Section",
+              "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+              "attributes": [
+                {
+                  "id": "93c7e1b4-d5ff-46cd-9abd-ac02d300d0f5",
+                  "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                  "name": "Background-color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "a1f64a46-2fe2-4d4d-9f7a-9ac0694d35af",
+                  "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                  "name": "Border-radius",
+                  "type": "text",
+                  "cssProperty": "border-radius: ",
+                  "default": [
+                    "0px"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bdsfevdsfa8888e1",
+                  "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff789yhy1-73evdw9999803b-0e548rtbef5f21",
+                      "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-erwe7-4b30-ab9b-f3324jjjhht",
+                      "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "04bgfvd286-vvvio8-46ea-acef-4cerwv88886c",
+                      "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "initial"
+                      ]
+                    },
+                    {
+                      "id": "edeewve6s66778-4a80-806b-c9415386a907",
+                      "selectorId": "d02e3336-0b1b-4aa2-9a49-00c0ed4c40be",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "initial"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pb5fd44e-4c21-47b3-a218-be274e746889",
+              "subHeading": "Section Description",
+              "selector": ".Survey .Section > .Header .Description",
+              "toggleVisibility": true,
+              "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+              "previewText": "Section Description lorem ipsum dolor",
+              "attributes": [
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-af7be3768b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "em",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "0.9"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-84ee-901c-afjklke341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "normal"
+                  ]
+                },
+                {
+                  "id": "8aop4e-b1cf-44ee-901c-af239997f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-00000-afrrryuu7f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Align",
+                  "type": "text",
+                  "alternatives": "textAlign",
+                  "cssProperty": "text-align:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "9304e7fb-32c9-41eb-b1fd-a8e2d62c2079",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                },
+                {
+                  "id": "82cbc2e1-18e2-4fc1-8e7b-anmuoaef0d3ef5",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Background color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bd8799094ae1",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff36e921-73fe-4265-803b-0e548ytrgdsdf21",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "04ff56bgf86-28b8-46ea-acef-4cc81d61be6c",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "ed2ccc27-5527-4a80-806b-c9415386a907",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "14"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dd1e313b-c894-4e7f-bbea-5d847d0b898f",
+          "mainHeading": "Question",
+          "subOptions": [
+            {
+              "id": "d93db7ba-cf2c-4163-8c8b-bb740b1f6856",
+              "subHeading": "Question Text",
+              "previewText": "Question",
+              "selector": ".Survey .QuestionText .Name, .Survey .qtRadio .Header .QuestionText .Name",
+              "selectorId": "0564cfa0-e0be-4c99-aa07-0f3970159a86",
+              "attributes": [
+                {
+                  "id": "0485f4a0-7e1d-4f08-aa93-9acde658d809",
+                  "selectorId": "0564cfa0-e0be-4c99-aa07-0f3970159a86",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "f825179a-a0fb-4a71-b49f-cad375e3a884",
+                  "selectorId": "0564cfa0-e0be-4c99-aa07-0f3970159a86",
+                  "name": "Font-weight",
+                  "type": "text",
+                  "cssProperty": "font-weight: ",
+                  "default": [
+                    "bold"
+                  ]
+                },
+                {
+                  "id": "88e46f4e-b1cf-44ee-901c-afjaiioo9997f",
+                  "selectorId": "0564cfa0-e0be-4c99-aa07-0f3970159a86",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "c99d4c1b-9fd1-4746-b455-128f0430575e",
+                  "selectorId": "0564cfa0-e0be-4c99-aa07-0f3970159a86",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d26f4533-85d3-48cc-ad73-9fda1437a1e0",
+              "subHeading": "Question Block",
+              "selector": ".Survey .Sections .Section .Questions .Question, .Survey .Question",
+              "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+              "attributes": [
+                {
+                  "id": "c7e94a58-6b34-416a-bc1a-8e2986b43f89",
+                  "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "b0b732ab-87ad-4c4e-ae84-3baa3b3b505d",
+                      "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "20"
+                      ]
+                    },
+                    {
+                      "id": "145hfefd2-5d71-4b30-ab9b-f35d456right",
+                      "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "42e70844-cea5-4f3d-8777-d333be9e115b",
+                      "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "5bdaefa8-fe81-4f2a-8790-4354c286d4da",
+                      "selectorId": "4874a3e0-234f-42b4-8e8b-06392dcbbce5",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a25fd44e-4c21-47b3-a218-be274e746889",
+              "subHeading": "Question Description",
+              "selector": ".Survey .DescriptionText, .Survey .DescriptionText span",
+              "toggleVisibility": true,
+              "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+              "previewText": "Question Description lorem ipsum dolor",
+              "attributes": [
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-af7be354b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "em",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "0.9"
+                  ]
+                },
+                {
+                  "id": "e0p46f4e-b1cf-44ee-901c-afjklke341b37f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Font Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "normal"
+                  ]
+                },
+                {
+                  "id": "ewop6f4e-b1cfaope-901c-afrrryuu7f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Align",
+                  "type": "text",
+                  "alternatives": "textAlign",
+                  "cssProperty": "text-align:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "88e46f4e-b1cf-44ee-901c3425iooioi997f",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "9304e7fb-32c9-41eb-b1fd-a8e2d62c2079",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                },
+                {
+                  "id": "82cbaauo1-18e2-4fc1-aopr7b-2b5aef0d3ef5",
+                  "selectorId": "65977246-994f-4ce1-a831-140ebc9c9b53",
+                  "name": "Background color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "06e5c11d-886c-4a4c-93dc-bd8799094ae1",
+                  "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "ff3ytrhgef21-73fe-4265-803b-0e548fd85f21",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "1452grdd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "04ff4286-28b8-46ea-acef-4cc81d61be6c",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "ed2ccc27-5527-4a80-806b-c9415386a907",
+                      "selectorId": "31610f05-a22c-46ea-a0c3-b235e0db06af",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0a25f1fd-aa8c-4c28-91df-97c60c418af7",
+          "mainHeading": "Answer",
+          "subOptions": [
+            {
+              "id": "307ecc11-6f76-4f8d-b04e-1c9ca1f16c2f",
+              "subHeading": "Answer Block",
+              "selector": ".Survey .Sections .Section .Questions .Question .Answers",
+              "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+              "attributes": [
+                {
+                  "id": "f45e1c46-e04c-445e-9196-2f012f31d40a",
+                  "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "3b642b41-ee84-4356-831c-d17cdf979f3a",
+                      "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4860-ab9b-f355342aright",
+                      "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "7"
+                      ]
+                    },
+                    {
+                      "id": "9318bbcf-b8a3-440a-bd93-941e87e30dac",
+                      "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35dc6aeleft",
+                      "selectorId": "833f6410-9219-45c6-bd96-083592d83139",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "7"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2104b2fa-b781-4faa-8370-d0ca7baa9786",
+              "subHeading": "Label Block",
+              "selector": ".Survey .Sections .Section .Questions .Question .Answers .Answer label",
+              "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+              "attributes": [
+                {
+                  "id": "f45e1c46-e04c-445e-9196-2f012f31d40a",
+                  "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "f29c31f0-5aa8-4230-a7e6-b9c78459586a",
+                      "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "1432463fd2-cb71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "bf6c8851-e299-46e1-82ba-08bf33c3f64d",
+                      "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "id": "e137b2ad-37a2-4e0e-80ee-eb291b6915e3",
+                      "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "4"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "675a7bae-c3e6-4a90-b112-8ebfc3768ghgh12",
+                  "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                  "name": "Display",
+                  "type": "text",
+                  "alternatives": "display",
+                  "cssProperty": "display: ",
+                  "default": [
+                    ""
+                  ]
+                },
+                {
+                  "id": "6757689vgghae-c3e6-4a90-b112-8ebfc33a1712",
+                  "selectorId": "54218def-4b8a-462b-9aeb-27c19d4d4822",
+                  "name": "Align Text with Input",
+                  "type": "text",
+                  "alternatives": "alignItems",
+                  "cssProperty": "align-items: ",
+                  "default": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b1550985-ffff-490f-a2a9-6dec055e1f8a",
+              "subHeading": "Label Text",
+              "selector": ".Survey .Sections .Section .Questions .Question .Answers .Answer label span:not(.ColorDisplay)",
+              "selectorId": "2822f4f7-5f2a-4844-bbe2-848dec1b83de",
+              "previewText": "Radio button answer",
+              "attributes": [
+                {
+                  "id": "d1717d96-321c-4b61-b08c-638f958fe52b",
+                  "selectorId": "2822f4f7-5f2a-4844-bbe2-848dec1b83de",
+                  "name": "Font Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size: ",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "e0p46f4e-b1cf-44ee-9sdvauuu667f",
+                  "selectorId": "2822f4f7-5f2a-4844-bbe2-848dec1b83de",
+                  "name": "Font Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "88e46f4e-b1aauiio99e-901c3425iooioi997f",
+                  "selectorId": "2822f4f7-5f2a-4844-bbe2-848dec1b83de",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "e2caab20-e7e3-404f-b42a-a44167acb925",
+                  "selectorId": "2822f4f7-5f2a-4844-bbe2-848dec1b83de",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#555555"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2e62577f-840f-4b1e-9466-f330af2898dd",
+              "subHeading": "Radio & Checkbox Block",
+              "selector": ".Survey .Sections .Section .Questions .Question .Answers .ColorDisplay",
+              "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+              "attributes": [
+                {
+                  "id": "f45e1c46-e04c-445e-9196-2f012f31d40a",
+                  "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "4abebf63-d9b0-4bde-8f11-798daeac8a6a",
+                      "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "1486fghfd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "7db1bd6e-3197-42a2-84a1-9debf064ce63",
+                      "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "edf0c577-197c-48c8-9684-9cc5bfb4de58",
+                      "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "120a40b9-e6b8-432a-a5de-f5c9ba2ac7d7",
+                  "selectorId": "65e1b5c2-64a4-4bc3-bd54-c17d534331e0",
+                  "name": "Display",
+                  "type": "text",
+                  "cssProperty": "display: ",
+                  "default": [
+                    "inline-block"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f5f9510a-cf6a-40a3-8265-d3d0ffc84378",
+              "subHeading": "Color Display Input",
+              "selector": ".Survey .Sections .Section .Questions .Question .Answers .ColorDisplay input",
+              "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+              "attributes": [
+                {
+                  "id": "f45e1c46-e04c-445e-9196-2f012f31d40a",
+                  "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35h76aeatop",
+                      "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "1455675872-5d71-4b30-ab9b-f35dc6fhdright",
+                      "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "33656db7-adfc-4025-a3d9-8067e615c56f",
+                      "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "id": "2c53acb2-9ea4-483f-b5a9-2620135983bc",
+                      "selectorId": "9745cda7-63cd-439e-8d78-a4adc27dcfc4",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "3"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "477b295f-5c6f-497b-9380-08664878e69b",
+              "subHeading": "All Input Fields",
+              "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+              "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+              "attributes": [
+                {
+                  "id": "675a7bae-c3e6-4a90-b112-8ebfc33a1712",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "name": "Width",
+                  "type": "text",
+                  "cssProperty": "width: ",
+                  "default": [
+                    "100%"
+                  ]
+                },
+                {
+                  "id": "675a7bae-c3e6-4a90-b112-8edsfa9808712",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "b6ec0b82-ffcd-4f8a-a320-bc7621aaac80",
+                  "name": "Border Width",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "multipleInputs": [
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35dc6aaaatop",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-width: ",
+                      "default": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "id": "24bffc6e-d798-4d3d-87b0-12a86e5772dc",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-width: ",
+                      "default": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "id": "8ab053ferttyud1-4b65-83ce-d1e3064063df",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-width: ",
+                      "default": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "id": "ed43eb38-13f1-4731-82aa-a35duygi820a7",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-width: ",
+                      "default": [
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "95d37ce3-e9b4-449b-8115-394b2dc78cfc",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "name": "Border Color",
+                  "multipleInputs": [
+                    {
+                      "id": "d49ea55f-f0e4-4672-poopa-9120dabe44d2",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "color",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-color: ",
+                      "default": [
+                        "#d9d9d9"
+                      ]
+                    },
+                    {
+                      "id": "c939ea59-cc2d-484c-acc1-a0c24b793c0c",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "color",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-color: ",
+                      "default": [
+                        "#d9d9d9"
+                      ]
+                    },
+                    {
+                      "id": "oppy6704-05fa-4d26-84f0-9bc91e58225a",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "color",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-color: ",
+                      "default": [
+                        "#d9d9d9"
+                      ]
+                    },
+                    {
+                      "id": "7bb818d0-b610-429e-a0f7-127001831ff6",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "color",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-color: ",
+                      "default": [
+                        "#d9d9d9"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ae20dea6-d696-4d22-95d9-8aff1440287c",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "name": "Border Style",
+                  "multipleInputs": [
+                    {
+                      "id": "b754093a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "boxModelOption": "top",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-top-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "0b22610d-c33d-4288-95e5-d9672ec70516",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "boxModelOption": "right",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-right-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "769aeac2-62c8-4303-a308-1870fde7d3b5",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "boxModelOption": "bottom",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-bottom-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "4128fa3c-b116-47d4-abb2-a3747364d9c70",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "boxModelOption": "left",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-left-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "baop2-ffcd-4f8a-a3ervwd7767-67c80",
+                  "name": "Border Radius",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "multipleInputs": [
+                    {
+                      "id": "1237221e-073e-41evorm08-8kssssss",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "bdapv9-9bd0-4a40-8ca2-6b8797h28b",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "57f870df-6e01-4a28-9216-3fccmmooo-49b688e",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "400-0071a-becc-40ee-vkkmnnn53-eabed7f7f05b",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d27afebf-a854-4932-a58b-5483fba09ac0",
+                  "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35d449eatop",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35dc6aright",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "dce39f95-951e-46f9-b404-76e879185ef6",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "855a7e71-3da9-439c-b90e-c921fdfe20dc",
+                      "selectorId": "e1985710-91b9-4eda-83f3-56e30f4f43c1",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "477b295f-5c6f-497b-9380-0aaoopptyu8e69b",
+              "subHeading": "All Inputs Hover (Mouse over)",
+              "selector": ".Survey .Answers input[type=\"text\"]:hover, .Survey .Question .Answers input[type=\"password\"]:hover, .Survey .Question .Answers input[type=\"email\"]:hover, .Survey .Question .Answers select:hover, .Survey textarea:hover, .Survey .qtDropDown select:hover, .Survey qtAutoComplete input[type=\"text\"]:hover, .Survey .qtCustom input[type=\"text\"]:hover",
+              "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+              "attributes": [
+                {
+                  "id": "6aotopue-c3e6-4a90-b112-vnuyy9808712",
+                  "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+                  "name": "Background Color",
+                  "type": "text",
+                  "variableForPseudo": "--inputHoverBackgroundColor",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "95d37ce3-olmmb4-avvio9b-8115-394b2dc78cfc",
+                  "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+                  "name": "Border Color",
+                  "type": "text",
+                  "variableForPseudo": "--inputHoverBackgroundColor",
+                  "cssProperty": "border-color: ",
+                  "default": [
+                    "#d9d9d9"
+                  ]
+                },
+                {
+                  "id": "aeaop6-d696-vuop2-95d9-8aff1440287c",
+                  "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+                  "name": "Border Style",
+                  "type": "text",
+                  "alternatives": "borderStyles",
+                  "cssProperty": "border-style: ",
+                  "default": [
+                    "solid"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82690hh819",
+              "subHeading": "Radiobutton - Unchecked",
+              "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]",
+              "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+              "attributes": [
+                {
+                  "id": "230eb51d-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Appearance",
+                  "type": "text",
+                  "cssProperty": "-webkit-appearance: ",
+                  "default": [
+                    "block"
+                  ]
+                },
+                {
+                  "id": "230eb51d-3c50-4eeuec-34hje-3cofvfc6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Position",
+                  "type": "text",
+                  "cssProperty": "position: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "230e345h2j1d-3c50-450c-88ae-3f232fc6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Height",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "height: ",
+                  "default": [
+                    "15"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c934jk4532a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Width",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "width:",
+                  "default": [
+                    "15"
+                  ]
+                },
+                {
+                  "id": "31e0779d-120d-4a4c-9038-d775efdsgted3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c9vfvr0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Width",
+                  "type": "text",
+                  "cssProperty": "border-width:",
+                  "defaultUnit": "px",
+                  "default": [
+                    "1"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c9vyui0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Style",
+                  "type": "text",
+                  "cssProperty": "border-style:",
+                  "default": [
+                    "solid"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c9a32fsd0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Color",
+                  "type": "text",
+                  "cssProperty": "border-color:",
+                  "default": [
+                    "currentColor"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-16d0-496f-aa7d-1crrwevbsd0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Radius",
+                  "type": "text",
+                  "defaultUnit": "%",
+                  "cssProperty": "border-radius:",
+                  "default": [
+                    "50"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82690hh-riuuuiooo819",
+              "subHeading": "Radiobutton - Checked",
+              "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked",
+              "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+              "attributes": [
+                {
+                  "id": "31e0779d-120d-4a4c-9038-d775eoppp-oteeyettpted3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c9a3opllmnb3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d844eb-epi94",
+                  "name": "Border Color",
+                  "type": "text",
+                  "cssProperty": "border-color:",
+                  "default": [
+                    "currentColor"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82635242345h819",
+              "subHeading": "Radiobutton Dot - Unchecked",
+              "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]::before",
+              "isPseudoElement": "::before",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+              "attributes": [
+                {
+                  "id": "2433hveaaaa1d-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Content",
+                  "type": "text",
+                  "cssProperty": "content: ",
+                  "variableForPseudo": "--radioContent",
+                  "default": [
+                    "' '"
+                  ]
+                },
+                {
+                  "id": "2433hveewrqa1d-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Position",
+                  "type": "text",
+                  "cssProperty": "position: ",
+                  "variableForPseudo": "--radioPositionDot",
+                  "default": [
+                    "absolute"
+                  ]
+                },
+                {
+                  "id": "230ej3h2kaa1d-3c50-nnvv0c-34hje-3cofvfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Display",
+                  "type": "text",
+                  "cssProperty": "display: ",
+                  "variableForPseudo": "--radioDisplay",
+                  "default": [
+                    "inline-block"
+                  ]
+                },
+                {
+                  "id": "2323j4khk251d-3c50-450c-34hje-3cofdfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Opacity",
+                  "type": "text",
+                  "cssProperty": "opacity: ",
+                  "variableForPseudo": "--radioOpacityUnchecked",
+                  "default": [
+                    "0"
+                  ]
+                },
+                {
+                  "id": "2aamm1d-3c5043j35h0c-34hje-aaooppc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Transition",
+                  "type": "text",
+                  "cssProperty": "transition: ",
+                  "variableForPseudo": "--radioTransition",
+                  "default": [
+                    "120ms transform ease-in-out"
+                  ]
+                },
+                {
+                  "id": "230aa34jhk63id-3c50-450c-88ae-3f232fc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Height",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "height: ",
+                  "variableForPseudo": "--radioHeight",
+                  "default": [
+                    "5"
+                  ]
+                },
+                {
+                  "id": "87copuyyc-1xx-496f-aa7d-14325jhka3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Width",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "width:",
+                  "variableForPseudo": "--radioWidth",
+                  "default": [
+                    "5"
+                  ]
+                },
+                {
+                  "id": "3aaioo9d-120d-4a4c-9038-d73425hjkd3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "variableForPseudo": "--radioBackgroundColor",
+                  "default": [
+                    "red"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-16d0-496f-aa73425bjk3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Border Radius",
+                  "type": "text",
+                  "defaultUnit": "%",
+                  "cssProperty": "border-radius:",
+                  "variableForPseudo": "--radioBorderRadius",
+                  "default": [
+                    "50"
+                  ]
+                },
+                {
+                  "id": "ae20dea6-d696-7689022-95d9-8dfdsb78vas9c",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai94",
+                  "name": "Position Of Dot",
+                  "multipleInputs": [
+                    {
+                      "id": "b75fddsb908v73a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "top: ",
+                      "variableForPseudo": "--radioPositionTop",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "b75raaghfndhgs9a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "right: ",
+                      "variableForPseudo": "--radioPositionRight",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "b7524364368a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "bottom: ",
+                      "variableForPseudo": "--radioPositionBottom",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "b752334wty5j28a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84aaai941",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "left: ",
+                      "variableForPseudo": "--radioPositionLeft",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82635244325jhbk819",
+              "subHeading": "Radiobutton Dot - Checked",
+              "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked::before",
+              "isPseudoElement": "::before",
+              "selectorId": "9caaauuoo3-af0d-4a2b-907f-d84aaai94",
+              "attributes": [
+                {
+                  "id": "2303425hlaa1d-3c50-450c-34hje-3cdfdg6",
+                  "selectorId": "9caaauuoo3-af0d-4a2b-907f-d84aaai94",
+                  "name": "Opacity",
+                  "type": "text",
+                  "cssProperty": "opacity: ",
+                  "variableForPseudo": "--radioOpacityChecked",
+                  "default": [
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95sdawfsadd82-12f9-480c-836c-82690hh819",
+              "subHeading": "Checkbox - Unchecked",
+              "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]",
+              "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+              "attributes": [
+                {
+                  "id": "230euiiuoi-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Appearance",
+                  "type": "text",
+                  "cssProperty": "-webkit-appearance: ",
+                  "default": [
+                    "block"
+                  ]
+                },
+                {
+                  "id": "230eb51d-3c50-4e897ghhuyc-34hje-3cofvfc6",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Position",
+                  "type": "text",
+                  "cssProperty": "position: ",
+                  "default": [
+                    "relative"
+                  ]
+                },
+                {
+                  "id": "235768902j1d-3c50-450c-88ae-3f232fc6",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Height",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "height: ",
+                  "default": [
+                    "15"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c93879ghj532a3",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Width",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "width:",
+                  "default": [
+                    "15"
+                  ]
+                },
+                {
+                  "id": "31e0779d-120d-4a4c-9038-d77879gfd3",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-476890f-aa7d-1c9vfvr0a3",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Width",
+                  "type": "text",
+                  "cssProperty": "border-width:",
+                  "defaultUnit": "px",
+                  "default": [
+                    "1"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-1xx-496f-aa7d-1c9vy909000",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Style",
+                  "type": "text",
+                  "cssProperty": "border-style:",
+                  "default": [
+                    "solid"
+                  ]
+                },
+                {
+                  "id": "87768hgfc-1xx-496f-aa7d-1c9a32fsd0a3",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Color",
+                  "type": "text",
+                  "cssProperty": "border-color:",
+                  "default": [
+                    "currentColor"
+                  ]
+                },
+                {
+                  "id": "87c6789ghc-16d0-496f-aa7d-1crrw768gh3",
+                  "selectorId": "9csdacdscwds93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Radius",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "border-radius:",
+                  "default": [
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95sdawfsadd82-12f9-480c-836c-8aaaoopppp819",
+              "subHeading": "Checkbox - Checked",
+              "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]:checked",
+              "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+              "attributes": [
+                {
+                  "id": "31e0779d-120d-4a4c-9038-d77errrppppd3",
+                  "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "none"
+                  ]
+                },
+                {
+                  "id": "87768hgfc-1xx-496f-aa7d-1c9a32fs-yryririr0a3",
+                  "selectorId": "9csdeeeepoo93-af0d-4a2b-907f-d844ebui94",
+                  "name": "Border Color",
+                  "type": "text",
+                  "cssProperty": "border-color:",
+                  "default": [
+                    "currentColor"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-827689gf19",
+              "subHeading": "Checkbox Checkmark",
+              "selector": ".Survey .qtCheckbox:not(.qtButton) input[type=\"checkbox\"]::before",
+              "isPseudoElement": "::before",
+              "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+              "attributes": [
+                {
+                  "id": "2900veaaaa1d-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Content",
+                  "type": "text",
+                  "cssProperty": "content: ",
+                  "variableForPseudo": "--checkboxContent",
+                  "default": [
+                    "' '"
+                  ]
+                },
+                {
+                  "id": "2433h7681d-3c50-450c-34hje-3cofvfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Position",
+                  "type": "text",
+                  "cssProperty": "position: ",
+                  "variableForPseudo": "--checkboxPositionCheck",
+                  "default": [
+                    "absolute"
+                  ]
+                },
+                {
+                  "id": "230ej3h2kaa1d-3c50-nnvv0c-34hje-3c3421hjc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Display",
+                  "type": "text",
+                  "cssProperty": "display: ",
+                  "variableForPseudo": "--checkboxDisplay",
+                  "default": [
+                    "inline-block"
+                  ]
+                },
+                {
+                  "id": "2323j89889983c50-450c-34hje-3cofdfc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Opacity",
+                  "type": "text",
+                  "cssProperty": "opacity: ",
+                  "variableForPseudo": "--checkboxOpacityUnchecked",
+                  "default": [
+                    "0"
+                  ]
+                },
+                {
+                  "id": "2aamm1d-3c5043j35h0c-7689hge-aaooppc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Transition",
+                  "type": "text",
+                  "cssProperty": "transition: ",
+                  "variableForPseudo": "--checkboxTransition",
+                  "default": [
+                    "120ms transform ease-in-out"
+                  ]
+                },
+                {
+                  "id": "230aa3488id-3c50-450c-88ae-3f232fc6",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Height",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "height: ",
+                  "variableForPseudo": "--checkboxHeight",
+                  "default": [
+                    "5"
+                  ]
+                },
+                {
+                  "id": "87caaaoop-1xx-496f-aa7d-14325jhka3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Width",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "width:",
+                  "variableForPseudo": "--checkboxWidth",
+                  "default": [
+                    "5"
+                  ]
+                },
+                {
+                  "id": "3aaioo9d-120d-4a4c-9038-2229hhjkd3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Background Color",
+                  "type": "text",
+                  "cssProperty": "background-color: ",
+                  "variableForPseudo": "--checkboxBackgroundColor",
+                  "default": [
+                    "red"
+                  ]
+                },
+                {
+                  "id": "87ceaefc-qioooo-496f-aa73425bjk3",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Clip Path",
+                  "type": "text",
+                  "cssProperty": "clip-path:",
+                  "variableForPseudo": "--checkboxCheck",
+                  "default": [
+                    "polygon(13% 39%,3% 41%,0 49%,3% 61%, 32% 96%,39% 100%,50% 100%, 56% 95%,100% 15%,99% 4%,86% 1%,76% 6%,41% 70%)"
+                  ]
+                },
+                {
+                  "id": "ae20dea6-d696-7689022-95d9-432hj32jhas9c",
+                  "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                  "name": "Position Of Checkmark",
+                  "multipleInputs": [
+                    {
+                      "id": "b75fddsbyyuuua-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "top: ",
+                      "variableForPseudo": "--checkboxPositionTop",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "b75raaghfndhgs9a-2001ai8ioi5-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "right: ",
+                      "variableForPseudo": "--checkboxPositionRight",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "b75aoopoio68a-2001-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "bottom: ",
+                      "variableForPseudo": "--checkboxPositionBottom",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "biiopppy5j28a-2ozc1-4535-9788-a2cv7b1a6",
+                      "selectorId": "9caaamc93-af0d-4a2b-907f-d84a76fd8s994",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "left: ",
+                      "variableForPseudo": "--checkboxPositionLeft",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-826aaaooppbk819",
+              "subHeading": "Checkbox Checkmark - Checked",
+              "selector": ".Survey .qtRadio:not(.qtButton) input[type=\"radio\"]:checked::before",
+              "isPseudoElement": "::before",
+              "selectorId": "9caaaaapopoio3-af0d-4a2b-907f-d84aaai94",
+              "attributes": [
+                {
+                  "id": "23apoouyyd-3c50-450c-34hje-3cdfdg6",
+                  "selectorId": "9caaaaapopoio3-af0d-4a2b-907f-d84aaai94",
+                  "name": "Opacity",
+                  "type": "text",
+                  "cssProperty": "opacity: ",
+                  "variableForPseudo": "--checkboxOpacityChecked",
+                  "default": [
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "92934315-4d93-4d85-9087-1581cda3a3bb",
+          "mainHeading": "Navigation",
+          "subOptions": [
+            {
+              "id": "3347c8b5-0ed0-4779-852c-d6e49a933e19",
+              "subHeading": "Navigation Block",
+              "selector": ".Survey .Navigation",
+              "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+              "attributes": [
+                {
+                  "id": "e2caab20-eonb3-404f-b42a-a4ato5",
+                  "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "b6aaaop82-erfcd-4f8a-a320-aucop3c80",
+                  "name": "Border Radius",
+                  "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                  "multipleInputs": [
+                    {
+                      "id": "avnmop1e-073e-rrr2-9708-8c966a759242",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "brrrrde3-9bd0-4a40-rra2-6b8797h28b",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "57f8rrope-6e01-4a28-oo16-3f763768569b6e",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "4009rooooo-becc-4oe-ae83-eabed7f7f05b",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e2aobmtd-d0cf-aor-bc03-5d345f2b2a08",
+                  "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "c71aee67-da35-aa23-aff9-0saaaaaaaa9",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "aerrrop2-5d71-4b30-nnmoprb-f35vhjmhvgkht",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "14eopvvnmm-5d71-4b30-aaabop-f35dc6bottom",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "aopprtnf-212a-4692-85fe-e7c4anmrp4a6b93",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "71c09624-2dfc-499b-87ea-567cb38dfead",
+                  "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f35dc6aeatop",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "25"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-f3tewgydnsgaaright",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "8278f447-54af-4ae0-9462-1ff3989990f1",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "93522218-61d5-48c6-a0fc-c4cc60543226",
+                      "selectorId": "7ab1cd9c-ae0c-45df-9bb7-9582fdce57eb",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-826aa987657878819",
+              "subHeading": "Next & Lock Button",
+              "selector": ".Survey .Navigation button.NextButton",
+              "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+              "attributes": [
+                {
+                  "id": "e2erwf8920-e7e3-404f-b42a-a44167akb925",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "e2caab20-e7e3-404f-b42a-wef6565656525",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Box Shadow",
+                  "type": "text",
+                  "cssProperty": "box-shadow: ",
+                  "default": [
+                    "0 1px 6px 0 rgba(0, 0, 0, 0.30)"
+                  ]
+                },
+                {
+                  "id": "b6wefa78sc8982-ffcd-4f8a-a320-bc7621243c80",
+                  "name": "Border Width",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1455efd2erwvea88888b30-ab9b-f35dc6auyrtrp",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "24bffc6e-dwvd999993d-87b0-12ughjk5772dc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "8ab05erv0000-4b65-83ce-d1e3064063df",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "ed43eb38-13f1-4731-rte9999999784820a7",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "95d37ce3-e9b4-449b-8115-39ebv9878cfc",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Border Color",
+                  "multipleInputs": [
+                    {
+                      "id": "d49ea55f-wvds655434672-8bba-9120dabe44d2",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "color",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "c939eafevwd88876vwhc-acc1-a0c24oiyuui3c0c",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "color",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "3bb76704-05fa-4d26-8bfevdsooiuio8225a",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "color",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "7bbytfebvwd666629e-a0f7-127001831ff6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "color",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ae20vwd5555d696-4d22-95d9-8aff1440287c",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Border Style",
+                  "multipleInputs": [
+                    {
+                      "id": "b754093a-2001-4535-9788-veooppp07b1a6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "boxModelOption": "top",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-top-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "0b22610d-c33d-4288-95vdwhhhh70516",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "boxModelOption": "right",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-right-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "76vw5d5562-62c8-4303-a308-1870fde7d3b5",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "boxModelOption": "bottom",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-bottom-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "7nd8fa3c-ebwdooooo47d4-abb2-a374766d9c70",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "boxModelOption": "left",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-left-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b6ec0b82-ffcd-4f8a-a3ervwd776767c80",
+                  "name": "Border Radius",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1237221e-073e-41ev999008-8c966a759242",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "bde0vwd89-9bd0-4a40-8ca2-6b8797h28b",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "57f870df-6e01-4a28-9216-3fvw66554449b6e",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "4009857a-becc-40ee-vwe55553-eabed7f7f05b",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e2060e8d-d0cf-4f88-bc03-vefds54432a08",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "c71aee67-da35-4023-aff9-0v544304bd9",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455egd2-5d71-4b30-ab9bvwea665vgkht",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-ev233232om",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "a9ba874f-212a-4692-97fvds333334a6b93",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f45e1c46-e04c-445e-9196-2fevwds778d40a",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "1455esvdoiuytt1-4b30-ab9b-f35h76aeatop",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455675872-5d71-4b30-ab9b-sdveeerright",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "33635db7-adfc-4025-a3d9-80fd900000c56f",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "2c53acb2-9ea4-483f-b5a9-26sdv755443333bc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-907f-d844eb1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82aaaaaa819",
+              "subHeading": "Next & Lock Button Text",
+              "selector": ".Survey .Navigation button.NextButton span",
+              "selectorId": "9c367c93-af0d-4a2b-907f-d84aaaaaa4",
+              "attributes": [
+                {
+                  "id": "87ceaefc-16d0-496f-aa7d-sdviygbd4d0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d84aaaaaa4",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "2sdv87777-3c50-450c-88ae-3f2ecca505c6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d84aaaaaa4",
+                  "name": "Font-Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight: ",
+                  "default": [
+                    "600"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-b1cf-44ee-901c-sdv43444437f",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d84aaaaaa4",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "31e0779d-120d-4a4c-9038-dsdv6554444bed3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-d84aaaaaa4",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#135167"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-83dsbbbbb8819",
+              "subHeading": "Previous Button",
+              "selector": ".Survey .Navigation button.PrevButton",
+              "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+              "attributes": [
+                {
+                  "id": "e2ersdvoopppp0-e7e3-404f-b42a-a44167akb925",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "e2caab20-e7e3-404f-b42a-svd566787856525",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Box Shadow",
+                  "type": "text",
+                  "cssProperty": "box-shadow: ",
+                  "default": [
+                    "0 1px 6px 0 rgba(0, 0, 0, 0.30)"
+                  ]
+                },
+                {
+                  "id": "b6wefsdvuiiu2-ffcd-4f8a-a320-bc7621243c80",
+                  "name": "Border Width",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1455esvdppooo8888b30-ab9b-f35dc6auyrtrp",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "24bffc6e-dsvdpp3d-87b0-12ughjk5772dc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "8ab05erv0000-4b65-vsdopxe-d1e3064063df",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "edsdoo-13f1-4731-rte9999999784820a7",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "95d37ce3-e9b4-vsdkjhb-8115-39ebv9878cfc",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Border Color",
+                  "multipleInputs": [
+                    {
+                      "id": "d49ea55f-wvds655svdklll2-8bba-9120dabe44d2",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "color",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "c939eafedvpppp6vwhc-acc1-a0c24oiyuui3c0c",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "color",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "3bdooooo-05fa-4d26-8bfevdsooiuio8225a",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "color",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "7bbytfebvdppppe-a0f7-127001831ff6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "color",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ae20vwopeeee696-4d22-95d9-8aff1440287c",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Border Style",
+                  "multipleInputs": [
+                    {
+                      "id": "b754093a-2001-4535-9788-veopcvvv7b1a6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "boxModelOption": "top",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-top-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "0b22610d-c33d-4288-9dllllllhh70516",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "boxModelOption": "right",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-right-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "76vw5d5562-62c8-4303-a308-llje7d3b5",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "boxModelOption": "bottom",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-bottom-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "7nd8fa3c-ebwdocv7d4-abb2-a374766d9c70",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "boxModelOption": "left",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-left-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bldgg0b82-ffcd-4f8a-a3ervwd776767c80",
+                  "name": "Border Radius",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1237221e-073e-41ev999008-8kssssss",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "bdpoovvv9-9bd0-4a40-8ca2-6b8797h28b",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "57f870df-6e01-4a28-9216-3fccmmooo49b6e",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "4009857a-becc-40ee-vkkmnnn53-eabed7f7f05b",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e2060e8d-d0cf-4f88-bc03-vefccddd08",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "c71aee67-da35-4023-aff9-0skkk04bd9",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455egd2-5d71-4b30-ab9bopppkht",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-ev233232llkkvooom",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "a9ba874f-212a-4692-97fvds33bbooppppa6b93",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f45e1c46-e04c-cttyyy9196-2fevwds778d40a",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "1455esvdoiuytt1-4b30-ab9b-curttaeatop",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455675872-5d71-4b30-ab9b-sdoopprprttight",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "33635db7-adfc-4025-a3d9-80fd9koopert56f",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "2c53acb2-9ea4-483f-b5a9-2oppppbbnmmm333bc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904332gggggg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-826d6667779",
+              "subHeading": "Previous Button Text",
+              "selector": ".Survey .Navigation button.PrevButton span",
+              "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+              "attributes": [
+                {
+                  "id": "87ceaefc-16d0-496f-aa7d-oppvvbbd0a3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "230eb51d-3c50-450c-88ae-3fcopppcww05c6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+                  "name": "Font-Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight: ",
+                  "default": [
+                    "600"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-bpoomuiiccce-901c-sdv43444437f",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "31e0779d-120d-4a4c-9038-dcvvvvvvvvvvved3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#135167"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-83dsbbbbb88ooopprtvfg19",
+              "subHeading": "Close Button",
+              "selector": ".Survey .Navigation button.CloseButton",
+              "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+              "attributes": [
+                {
+                  "id": "e2ersdr0-e7e3-404f-b42a-a44167akb925",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Background Color",
+                  "type": "color",
+                  "cssProperty": "background-color: ",
+                  "default": [
+                    "#FFFFFF"
+                  ]
+                },
+                {
+                  "id": "e2caab20-e7e3-404f-b42a-srttyy525",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Box Shadow",
+                  "type": "text",
+                  "cssProperty": "box-shadow: ",
+                  "default": [
+                    "0 1px 6px 0 rgba(0, 0, 0, 0.30)"
+                  ]
+                },
+                {
+                  "id": "b6wopiu2-ffcd-4f8a-a320-bc7621243c80",
+                  "name": "Border Width",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1455esvdpdvui30-ab9b-f35dc6auyrtrp",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "24bffc6e-dsaaap3d-87b0-12ughjk5772dc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "8ab05erv0000-4b65-vsdopxe-d1coppdf",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "edsdoo-13f1-4731-rte9999999lmio20a7",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-width: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "95d37ce3-e9b4-veb-8115-39ebv9878cfc",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Border Color",
+                  "multipleInputs": [
+                    {
+                      "id": "d49ea55f-wpoll2-8bba-9120dabe44d2",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "color",
+                      "boxModelOption": "top",
+                      "cssProperty": "border-top-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "c939eafedvpppp6vwhc-acc1-a0l3c0c",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "color",
+                      "boxModelOption": "right",
+                      "cssProperty": "border-right-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "3bdooooo-05fa-4d26-xu225a",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "color",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "border-bottom-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    },
+                    {
+                      "id": "7bbytfebvdppppe-a0f7-127001831ffppoiuuu6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "color",
+                      "boxModelOption": "left",
+                      "cssProperty": "border-left-color: ",
+                      "default": [
+                        "#FFFFFF"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ae20vwopeeee696-4d22-95d9-8aerpppp87c",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Border Style",
+                  "multipleInputs": [
+                    {
+                      "id": "b754093a-2001-4535-9788-veciopppb1a6",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "boxModelOption": "top",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-top-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "0b22610d-c33d-4288-9dllllllrtopppppppp16",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "boxModelOption": "right",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-right-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "76vw5d5562-62c8-4303-a308-llopppeee5",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "boxModelOption": "bottom",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-bottom-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    },
+                    {
+                      "id": "7nd8fa3c-ebwdocv7d4-abb2-a37eeec70",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "boxModelOption": "left",
+                      "alternatives": "borderStyles",
+                      "cssProperty": "border-left-style: ",
+                      "default": [
+                        "solid"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bldgg0b82-ffcd-4f8a-a3erwooooc80",
+                  "name": "Border Radius",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "multipleInputs": [
+                    {
+                      "id": "1237221e-073e-4woppp08-8kssssss",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top left",
+                      "cssProperty": "border-top-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "bdpoovvv9-9bd0-4a40-8ca2-6b8eob",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top right",
+                      "cssProperty": "border-top-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "57f870df-6e01-4a28-9216-3fopv49b6e",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom right",
+                      "cssProperty": "border-bottom-right-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    },
+                    {
+                      "id": "4009857a-becc-40ee-vkkmnnn53-e5b",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom left",
+                      "cssProperty": "border-bottom-left-radius: ",
+                      "default": [
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e2060e8d-d0cf-4f88-bc03-p8",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Padding",
+                  "multipleInputs": [
+                    {
+                      "id": "c71aee67-da35-4023-aff9-0skkkwoopvvvv9",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "padding-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455egd2-5d71-4b30-ab9boppp-oppppkht",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "padding-right: ",
+                      "default": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "id": "1455efd2-5d71-4b30-ab9b-ev233232l-eiooom",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "padding-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "a9ba874f-212a-4692-97fvds33b-euuii93",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "padding-left: ",
+                      "default": [
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f45e1c46-e04c-cttyyy9196-2fevwds-eeopppp40a",
+                  "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                  "name": "Margin",
+                  "multipleInputs": [
+                    {
+                      "id": "1455esvdoiuytt1-4b30-ab9b-curteeoptop",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "top",
+                      "cssProperty": "margin-top: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "1455675872-5d71-4b30-ab9b-sdoop-errrrrght",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "right",
+                      "cssProperty": "margin-right: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "33635db7-adfc-4025-a3d9-80fd9kop56f",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "bottom",
+                      "cssProperty": "margin-bottom: ",
+                      "default": [
+                        "5"
+                      ]
+                    },
+                    {
+                      "id": "2c53acb2-9ea4-483f-b5a9-2onn333bc",
+                      "selectorId": "9c367fdsayyyy0d-4a2b-904344409opcvgg1f0594",
+                      "type": "text",
+                      "defaultUnit": "px",
+                      "boxModelOption": "left",
+                      "cssProperty": "margin-left: ",
+                      "default": [
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95533d82-12f9-480c-836c-82eoppp79",
+              "subHeading": "Close Button Text",
+              "selector": ".Survey .Navigation button.CloseButton span",
+              "selectorId": "9c367c93-af0d-4a2b-907f-deewwwop0594",
+              "attributes": [
+                {
+                  "id": "87ceaefc-16d0-496f-aa7d-oppea3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deeeeeeeeeee4",
+                  "name": "Font-Size",
+                  "type": "text",
+                  "defaultUnit": "px",
+                  "cssProperty": "font-size:",
+                  "default": [
+                    "14"
+                  ]
+                },
+                {
+                  "id": "230eb51d-3c50-450c-88ae-3fcokloppppc6",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deeeeeeeeeee4",
+                  "name": "Font-Weight",
+                  "type": "text",
+                  "cssProperty": "font-weight: ",
+                  "default": [
+                    "600"
+                  ]
+                },
+                {
+                  "id": "e6e46f4e-bopnnnmye-901c-sdv43444437f",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deeeeeeeeeee4",
+                  "name": "Text Transform",
+                  "type": "text",
+                  "alternatives": "textTransform",
+                  "cssProperty": "text-transform:",
+                  "default": [
+                    "initial"
+                  ]
+                },
+                {
+                  "id": "31e0779d-120d-4a4c-9038-dcved3",
+                  "selectorId": "9c367c93-af0d-4a2b-907f-deeeeeeeeeee4",
+                  "name": "Color",
+                  "type": "color",
+                  "cssProperty": "color: ",
+                  "default": [
+                    "#135167"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "4eabb794-259c-4a90-adf1-e1510dc370b2",
+      "name": "Monospace theme",
+      "typeId": "8e8a2d57-f8d6-4cfb-be6d-aa0a45fcfc83",
+      "created": "2023-05-10",
+      "attributes": [
+        {
+          "id": "1237221e-073e-41evorm08-8kssssss",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-top-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "400-0071a-becc-40ee-vkkmnnn53-eabed7f7f05b",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-bottom-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3fccmmooo-49b688e",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-bottom-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "d49ea55f-f0e4-4672-poopa-9120dabe44d2",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-top-color: ",
+          "values": [
+            "#a6a6a6"
+          ]
+        },
+        {
+          "id": "c939ea59-cc2d-484c-acc1-a0c24b793c0c",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-right-color: ",
+          "values": [
+            "#999999"
+          ]
+        },
+        {
+          "id": "oppy6704-05fa-4d26-84f0-9bc91e58225a",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-bottom-color: ",
+          "values": [
+            "#a3a3a3"
+          ]
+        },
+        {
+          "id": "7bb818d0-b610-429e-a0f7-127001831ff6",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-left-color: ",
+          "values": [
+            "#949494"
+          ]
+        },
+        {
+          "id": "1455efd2-5d71-4b30-ab9b-f35dc6aaaatop",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-top-width: ",
+          "values": [
+            "2px"
+          ]
+        },
+        {
+          "id": "24bffc6e-d798-4d3d-87b0-12a86e5772dc",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-right-width: ",
+          "values": [
+            "2px"
+          ]
+        },
+        {
+          "id": "8ab053ferttyud1-4b65-83ce-d1e3064063df",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-bottom-width: ",
+          "values": [
+            "2px"
+          ]
+        },
+        {
+          "id": "ed43eb38-13f1-4731-82aa-a35duygi820a7",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-left-width: ",
+          "values": [
+            "2px"
+          ]
+        },
+        {
+          "id": "bdapv9-9bd0-4a40-8ca2-6b8797h28b",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "border-top-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "oopru9-d9bc-4a67-afd4-8b1b4190fbb1",
+          "selector": ".Survey, .Survey button span",
+          "cssProperty": "font-family: ",
+          "values": [
+            "monospace"
+          ]
+        },
+        {
+          "id": "855a7e71-3da9-439c-b90e-c921fdfe20dc",
+          "selector": ".Survey .Question .Answers input[type=\"text\"], .Survey .Question .Answers input[type=\"password\"],.Survey .Question .Answers input[type=\"email\"],.Survey .Question .Answers select, .Survey textarea, .Survey .qtDropDown select, .Survey qtAutoComplete input[type=\"text\"], .Survey .qtCustom input[type=\"text\"]",
+          "cssProperty": "padding-left: ",
+          "values": [
+            "5px"
+          ]
+        },
+        {
+          "id": "1455efd2-5d71-4b30-ab9b-f35dc6aeleft",
+          "selector": ".Survey .Sections .Section .Questions .Question .Answers",
+          "cssProperty": "padding-left: ",
+          "values": [
+            "0px"
+          ]
+        },
+        {
+          "id": "675a7bae-c3e6-4a90-b112-8ebfc3768ghgh12",
+          "selector": ".Survey .Sections .Section .Questions .Question .Answers .Answer label",
+          "cssProperty": "display: ",
+          "values": [
+            "inline-flex"
+          ]
+        },
+        {
+          "id": "6757689vgghae-c3e6-4a90-b112-8ebfc33a1712",
+          "selector": ".Survey .Sections .Section .Questions .Question .Answers .Answer label",
+          "cssProperty": "align-items: ",
+          "values": [
+            "center"
+          ]
+        },
+        {
+          "id": "0485f4a0-7e1d-4f08-aa93-9acde658d809",
+          "selector": ".Survey .QuestionText .Name, .Survey .qtRadio .Header .QuestionText .Name",
+          "cssProperty": "font-size:",
+          "values": [
+            "14px"
+          ]
+        },
+        {
+          "id": "d1717d96-321c-4b61-b08c-638f958fe52b",
+          "selector": ".Survey .Sections .Section .Questions .Question .Answers .Answer label span:not(.ColorDisplay)",
+          "cssProperty": "font-size: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "e2caab20-eonb3-404f-b42a-a4ato5",
+          "selector": ".Survey .Navigation",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#999999"
+          ]
+        },
+        {
+          "id": "e2caab20-e7e3-404f-b42a-a44167akb925",
+          "selector": ".Survey .Navigation button",
+          "cssProperty": "background-color: ",
+          "values": [
+            "white"
+          ]
+        },
+        {
+          "id": "1237221e-073e-4182-9708-8c966a759242",
+          "selector": ".Survey .Navigation button",
+          "cssProperty": "border-top-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3f763768569b6e",
+          "selector": ".Survey .Navigation button",
+          "cssProperty": "border-bottom-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-d775ea99bed3",
+          "selector": ".Survey .Navigation button span",
+          "cssProperty": "color: ",
+          "values": [
+            "black"
+          ]
+        },
+        {
+          "id": "230eb51d-3c50-450c-88ae-3f2ecca505c6",
+          "selector": ".Survey .Navigation button span",
+          "cssProperty": "font-weight: ",
+          "values": [
+            "800"
+          ]
+        },
+        {
+          "id": "067a9d4b-0504-4b84-9e25-663a6745c314",
+          "selector": ".Survey .Section > .Header .Name",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "403b2e2e-10b2-4319-8723-989f17dfcdb7",
+          "selector": ".Survey .Section > .Header .Name",
+          "cssProperty": "color: ",
+          "values": [
+            "#474747"
+          ]
+        },
+        {
+          "id": "ed2ccc27-5527-4a80-806b-c9415386a907",
+          "selector": ".Survey .Section > .Header .Name",
+          "cssProperty": "padding-left: ",
+          "values": [
+            "0px"
+          ]
+        },
+        {
+          "id": "9e8e633c-95d4-4456-827e-5a2a1bd37334",
+          "selector": ".Survey .Section > .Header .Name",
+          "cssProperty": "font-size:",
+          "values": [
+            "20px"
+          ]
+        },
+        {
+          "id": "e6e65f4e-b1cf-44ee-901c-af7be341b37f",
+          "selector": ".Survey .Page > .Header .Name",
+          "cssProperty": "font-size:",
+          "values": [
+            "35px"
+          ]
+        },
+        {
+          "id": "9304e7fb-32c9-41eb-b1fd-a8e2d62c2079",
+          "selector": ".Survey .Page > .Header .Name",
+          "cssProperty": "color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "82cbc2e1-18e2-4fc1-8e7b-2baooop0d3ef5",
+          "selector": ".Survey .Page > .Header .Name",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#808080"
+          ]
+        },
+        {
+          "id": "e6e46f4e-b1cf-44ee-901c-afrrryuu7f",
+          "selector": ".Survey .Page > .Header .Name",
+          "cssProperty": "text-align:",
+          "values": [
+            "center"
+          ]
+        },
+        {
+          "id": "ff789yhy1-73fe-4265-803b-0e548rtbef5f21",
+          "selector": ".Survey .Page > .Header",
+          "cssProperty": "padding-top: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "04bgfvd286-vvvio8-46ea-acef-4cc81d61be6c",
+          "selector": ".Survey .Page > .Header",
+          "cssProperty": "padding-bottom: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "067a9d4b-0504-4b84-9e25-663asda7814",
+          "selector": ".Survey .Page > .Header",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#808080"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-dsdv6554444bed3",
+          "selector": ".Survey .Navigation button.NextButton span",
+          "cssProperty": "color: ",
+          "values": [
+            "#000000"
+          ]
+        },
+        {
+          "id": "8ortp2e1-18e2-4fc1-8e7b-2b5aef0d3ef5",
+          "selector": ".Survey .Page > .Header .Description",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-dcvvvvvvvvvvved3",
+          "selector": ".Survey .Navigation button.PrevButton span",
+          "cssProperty": "color: ",
+          "values": [
+            "#6e6e6e"
+          ]
+        },
+        {
+          "id": "31e0779d-120d-4a4c-9038-dcved3",
+          "selector": ".Survey .Navigation button.CloseButton span",
+          "cssProperty": "color: ",
+          "values": [
+            "#808080"
+          ]
+        },
+        {
+          "id": "e2ersdr0-e7e3-404f-b42a-a44167akb925",
+          "selector": ".Survey .Navigation button.CloseButton",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "e2ersdvoopppp0-e7e3-404f-b42a-a44167akb925",
+          "selector": ".Survey .Navigation button.PrevButton",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "e2erwf8920-e7e3-404f-b42a-a44167akb925",
+          "selector": ".Survey .Navigation button.NextButton",
+          "cssProperty": "background-color: ",
+          "values": [
+            "#ffffff"
+          ]
+        },
+        {
+          "id": "1237221e-073e-4woppp08-8kssssss",
+          "selector": ".Survey .Navigation button.CloseButton",
+          "cssProperty": "border-top-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3fopv49b6e",
+          "selector": ".Survey .Navigation button.CloseButton",
+          "cssProperty": "border-bottom-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "1237221e-073e-41ev999008-8kssssss",
+          "selector": ".Survey .Navigation button.PrevButton",
+          "cssProperty": "border-top-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3fccmmooo49b6e",
+          "selector": ".Survey .Navigation button.PrevButton",
+          "cssProperty": "border-bottom-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "1237221e-073e-41ev999008-8c966a759242",
+          "selector": ".Survey .Navigation button.NextButton",
+          "cssProperty": "border-top-left-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "57f870df-6e01-4a28-9216-3fvw66554449b6e",
+          "selector": ".Survey .Navigation button.NextButton",
+          "cssProperty": "border-bottom-right-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "e6e46f4e-b1cf-4aayuu-901c-afrrryuu7f",
+          "selector": ".Survey .Section > .Header .Name",
+          "cssProperty": "text-align:",
+          "values": [
+            "left"
+          ]
+        },
+        {
+          "id": "a1f64a46-2fe2-4d4d-9f7a-9ac0694d35af",
+          "selector": ".Survey .Sections .Section",
+          "cssProperty": "border-radius: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "ff36e921-73fe-4265-803b-0e548fd85f21",
+          "selector": ".Survey .Page > .Header .Description",
+          "cssProperty": "padding-top: ",
+          "values": [
+            "10px"
+          ]
+        },
+        {
+          "id": "04ff4286-28b8-46ea-acef-4cctngrbfv6c",
+          "selector": ".Survey .Page > .Header .Description",
+          "cssProperty": "padding-bottom: ",
+          "values": [
+            "10px"
+          ]
+        }
+      ]
+    }
+  ]
+}

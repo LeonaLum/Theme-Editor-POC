@@ -1,0 +1,38 @@
+.button{
+  @include Pointer;
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  &:disabled{
+    color: var(--Grey) !important;
+    background-color: initial !important;
+    cursor: initial;
+  }
+}
+
+.border-button{
+  border: none;
+  border-bottom: solid 1px var(--black);
+  background-color: transparent;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.secondary-button{
+  @include RadiusStrong;
+  padding: 0.8em 4em;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.primary-button{
+  padding: 0.8em 4em;
+  border-radius: 20px;
+  background-color: var(--Peach);
+  border: none;
+  color: white;
+  &:hover{
+    background-color: var(--PeachHover);
+  }
+}
+

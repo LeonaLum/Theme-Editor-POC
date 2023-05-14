@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*:not(button, .preview-content){
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--TextDark);
+}
+
+.app-footer, .app-header, .editor-admin, .card-outer, table, 
+.modal-outer, .loading, .big-heading{
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 300;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+.App{
+  height: 100dvh;
+  .app-main{
+    @include Flexbox(row, auto, auto);
+    height: 80%;
+  }
+}
+
+
+.Survey *:not(input[type="color"]){
+  @include Transition;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+//Sätter upp variabler för pseudoelementen eftersom att dessa inte kan nås med queryselector
+
+
+
+.Survey .qtRadio:not(.qtButton) input[type="radio"]{
+--radioContent: "''";
+--radioTransform: initial;
+--radioTransition: initial;
+--radioHeight: initial;
+--radioWidth: initial;
+--radioBackgroundColor: initial;
+--radioBorderRadius: initial;
+--radioDisplay: initial;
+--radioOpacityUnchecked: 0;
+--radioOpacityChecked: 1;
+--radioPositionDot: initial;
+--radioPositionTop: 0;
+--radioPositionRight: 0;
+--radioPositionBottom: 0;
+--radioPositionLeft: 0;
+}
+
+
+.Survey .qtCheckbox:not(.qtButton) input[type="checkbox"]{
+  --checkboxContent: "''";
+  --checkboxTransform: initial;
+  --checkboxTransition: initial;
+  --checkboxHeight: initial;
+  --checkboxWidth: initial;
+  --checkboxBackgroundColor: initial;
+  --checkboxBorderRadius: initial;
+  --checkboxDisplay: initial;
+  --checkboxOpacityUnchecked: 0;
+  --checkboxOpacityChecked: 1;
+  --checkboxPositionCheck: initial;
+  --checkboxPositionTop: 0;
+  --checkboxPositionRight: 0;
+  --checkboxPositionBottom: 0;
+  --checkboxPositionLeft: 0;
+  --checkboxCheck: none;
+}
+
+.Survey .qtCheckbox:not(.qtButton) input[type="checkbox"]::before{
+  content: var(--checkboxContent);
+  opacity: var(--checkboxOpacityUnchecked);
+  transition: var(--checkboxTransition);
+  height: var(--checkboxHeight);
+  width: var(--checkboxWidth);
+  background-color: var(--checkboxBackgroundColor);
+  border-radius: var(--checkboxBorderRadius);
+  display: var(--checkboxDisplay);
+  position: var(--checkboxPositionCheck);
+  top: var(--checkboxPositionTop);
+  right: var(--checkboxPositionRight);
+  bottom: var(--checkboxPositionBottom);
+  left: var(--checkboxPositionLeft);
+  clip-path: var(--checkboxCheck);
+}
+
+
+
+.Survey .qtCheckbox:not(.qtButton) input[type="checkbox"]:checked::before{
+  opacity: var(--checkboxOpacityChecked);
+}
+
+
+
+.Survey .qtRadio:not(.qtButton) input[type="radio"]::before{
+  content: var(--radioContent);
+  opacity: var(--radioOpacityUnchecked);
+  transition: var(--radioTransition);
+  height: var(--radioHeight);
+  width: var(--radioWidth);
+  background-color: var(--radioBackgroundColor);
+  border-radius: var(--radioBorderRadius);
+  display: var(--radioDisplay);
+  position: var(--radioPositionDot);
+  top: var(--radioPositionTop);
+  right: var(--radioPositionRight);
+  bottom: var(--radioPositionBottom);
+  left: var(--radioPositionLeft);
+}
+
+
+
+.Survey .qtRadio:not(.qtButton) input[type="radio"]:checked::before{
+  opacity: var(--radioOpacityChecked);
+}
+
+
+
+.Survey input{
+  --inputHoverBorderColor: initial;
+  --inputHoverBackgroundColor: none;
+}
+
+.Survey input:hover{
+  background-color: var(--inputHoverBackgroundColor);
+  border-color: var(--inputHoverBorderColor);
+}

@@ -1,0 +1,53 @@
+
+.card-outer{
+  @include Transition;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+  border: solid 1px var(--LightGrey);
+  background-color: white;
+  text-align: center;
+  padding: 1.5em;
+
+  .card-heading{
+   margin: 20px 0px 0px 0px;
+   height: 20%;
+   padding-bottom: 50px;
+   font-weight: 500;
+   color: var(--black);
+  }
+  .card-icon{
+    @include Flexbox(column, center, center);
+    @include BackgroundAdjustments;
+    height: 70px;
+    background-size: 60px 60px;
+  }
+  .magic-wand{
+    background-image: url("../src/icons/MagicWand.svg");
+  }
+  .pencil{
+    background-image: url("../src/icons/PencilSimple.svg");
+
+  }
+  .clipboard{
+    background-image: url("../src/icons/Clipboard.svg");
+  }
+
+  .card-text{
+    @include Flexbox(column, center, flex-start);
+    padding-bottom: 30px;
+    font-size: 12px;
+  }
+  .card-button{
+    @include Transition;
+    background-color: var(--Peach);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    &:hover{
+      background-color: var(--PeachHover);
+    }
+  }
+}

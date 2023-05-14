@@ -1,0 +1,40 @@
+.app-header{
+  @include Flexbox(row, center, space-between);
+  padding: 2em;
+  border-bottom: solid 1px var(--LightGrey);
+  color: grey;
+  height: 10%;
+  h1{
+    @include Flexbox(row, center, flex-start);
+   font-size: 1rem;
+   .sweet-logo{
+    background-image: url("../src/icons/SweetLogo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+   }
+   .logo-border{
+    height: 35px;
+    width: 1.5px;
+    background-color: black;
+    margin: 0px 15px;
+   }
+   .paint-icon{
+    background-image: url("../src/icons/Palette.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
+   }
+  }
+  h2{
+    font-size: 1.1rem;
+  }
+}

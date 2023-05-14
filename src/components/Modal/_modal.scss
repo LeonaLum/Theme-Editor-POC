@@ -1,0 +1,27 @@
+
+  .modal-outer{
+    @include Radius;
+    @include BoxShadowSoft;
+    text-align: center;
+    width: 500px;
+    background-color: white;
+     padding: 20px;
+    .modal-header{
+       @include Radius;
+       padding: 20px 0px 0px 20px;
+       h2{
+        color: var(--black);
+        font-size: 20px;
+        font-weight: 400;
+       }
+    }
+    .modal-body{
+      padding: 20px;
+
+    }
+    .modal-footer{
+      @include Flexbox(row, center, center);
+      padding: 20px;
+      column-gap: 40px;
+    }
+  }

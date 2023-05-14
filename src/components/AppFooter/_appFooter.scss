@@ -1,0 +1,11 @@
+.app-footer{
+  @include Flexbox(row, center, flex-end);
+  background-color: white;
+  column-gap: 50px;
+  padding-right: 5%;
+  border-top: solid 1px var(--LightGrey);
+  height: 10%;
+  width: 100%;
+  position:fixed;
+  z-index: 3;
+}

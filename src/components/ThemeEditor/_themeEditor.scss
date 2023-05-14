@@ -1,0 +1,106 @@
+
+.editor-admin{
+  @include Scrollbar;
+  overflow: scroll;
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  
+  .editor-section{
+    padding: 2em;
+    border-bottom: solid var(--LightGrey) 1px;
+    .editor-section-heading{
+      @include Flexbox(row, center, flex-start);
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding-bottom: 10px;
+      .main-heading-icon{
+        @include BackgroundAdjustments;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: -5px;
+        height: 30px;
+        width: 30px;
+      }
+      .Form{
+        background-image: url("../src/icons/Clipboard.svg");
+      }
+      .Page{
+        background-image: url("../src/icons/Page.svg");
+      }
+      .Section{
+        background-image: url("../src/icons/Section.svg");
+      }
+      .Question{
+        background-image: url("../src/icons/Question.svg");
+      }
+      .Answer{
+        background-image: url("../src/icons/Answer.svg");
+      }
+      .Navigation{
+        background-image: url("../src/icons/Navigation.svg");
+      }
+      
+      .section-toggle{
+        @include Pointer;
+        @include Flexbox(row, center, center);
+        padding: 5px 10px 5px 10px;
+        border: solid 1px rgb(199, 199, 199);
+        color: grey;
+        border-radius: 50px;
+        font-size: 10px;
+        margin-left: 30px;
+      }
+    }
+    .editor-section-heading-description{
+      font-size: 0.7rem;
+      padding-bottom: 30px;
+    }
+    .editor-sub-section{
+       margin-bottom: 30px;
+      .editor-section-subheading{
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 10px 0px 20px 0px;
+      }
+      .option{
+        @include Flexbox(row, flex-end, flex-start);
+        margin-bottom: 10px;
+        border: none;
+        .multiple-inputs{
+          border: none;
+          margin-right: 7px;
+          flex-direction: column;
+          min-width: 80px;
+          .boxmodel-options{
+            color: rgb(105, 105, 105);
+            font-size: 0.6em;
+          }
+        }
+        label{
+          display: block;
+          height: 100%;
+          width: 190px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    
+  }
+}
+.editor-preview{
+  height: 100%;
+  width: 50%;
+  .preview-content{
+    @include Scrollbar;
+    overflow: scroll;
+    height: 100%;
+    background-color: #ebebeb;
+    padding: 20px;
+  }
+}
+
+.app-header input{
+  @include InputField;
+}

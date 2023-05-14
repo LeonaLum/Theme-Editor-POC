@@ -1,0 +1,18 @@
+.dropdown{
+  @include Pointer;
+  @include InputField;
+}
+
+.dropdown-unit{
+  width: 50px;
+}
+
+.dropdown-alternatives{
+  width: 150px ;
+  padding-left: 0px;
+}
+
+.dropdown-alternatives-multiple{
+  width: 75px;
+  padding-left: 0px;
+}

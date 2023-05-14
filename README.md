@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+Theme Editor POC för Sweet Forms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Komma igång 
 
-In the project directory, you can run:
 
-### `npm start`
+1.  Klona ner projektet från Repot i Github
+För att få projektet till din dator behöver du installera ett cli verktyg som heter git bash, detta kan hittas här: https://git-scm.com/downloads
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+När installationen är klar skapar du en ny mapp på din dator.
+Gå sedan in i mappen och högerklicka, välj alternativet git bash here.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Ange kommandot git init i fönstret.
+Skriv sedan in git clone (urlen till repot)
+Projektmappen finns nu i mappen du skapade.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Ladda ner visual studio code https://code.visualstudio.com/download
+När installationen är klar väljer du open folder.
+Navigera sedan till och välj projektmappen.
+Välj alternativet view i visual studio och klicka sedan på terminal.
 
-### `npm run build`
+Kör kommandot npm install i terminalen
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Se om alla dependencies är på plats
+Dependencies är dem hjälpmedel och verktyg som jag använt mig av för att kunna bygga applikationen. Dessa kan hittas i filen package.json
+Efter att npm install körts behöver dessa dependencies finnas på plats under dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"@types/node": "^16.18.23",
 
-### `npm run eject`
+"@types/react": "^18.0.35",
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+"@types/react-dom": "^18.0.11",
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+"json-server": "^0.17.3",
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+"axios": "^1.3.5",
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+"react": "^18.2.0",
 
-## Learn More
+"react-dom": "^18.2.0",
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+"react-router-dom": "^6.10.0",
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+"react-scripts": "5.0.1",
+
+"typescript": "^4.9.5",
+
+"uuidv4": "^6.2.13"
+
+Om någon av dessa ovan fattas eller har ett annat versionsnummer så behöver paketet installeras manuellt.
+
+Obs: det är viktigt att versionen av paketet stämmer överens med versionen ovan, ange versionen efter @ om en manuell installation behövs
+
+
+Manuell installation:
+
+*React är det bibliotek/ramverk som jag använt mig av för att bygga den här applikationen.
+installera React med kommandot:
+npm install --save react@18.2.0 react-dom
+
+
+*Dem dependencies som börjar med @types kommer från typescript och behövs för att typescript ska kunna användas med react..
+
+För att installera dessa anger du detta kommando i terminalen:
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+
+* json-server använder jag som en tillfällig databas för applikationen. Med detta paket får jag ett utrymme att förvara den json-data som behövs för att skapa editorn samt spara teman. Jag får också ett REST API med endpoints som används genom applikationen för att manipulera data.
+Det här paketet behöver köras i en annan port på datorn. 
+
+Installera json-server med kommandot:
+npm install --save json-server@0.17.3
+
+Med detta kommando väljer vi att json-server ska startas på port 8000:
+npx json-server --watch database.json --port 8000
+(Notera att json-server måste vara igång innan applikationen startar.)
+
+* Axios använder jag för dem CRUD kommandon som behövs för att kommunicera med min   mock-backend. Exempel på dessa är när man vill skapa, spara, uppdatera och ta bort ett tema. 
+Installera axios med kommandot:
+npm install axios@1.3.5
+
+
+*React-router-dom behövs för att kunna navigera genom appen.
+
+Installera med kommandot:
+npm install --save react-router-dom@6.10.0
+
+
+*uuidv4 behövs för att generera unika idn för nya teman.
+
+Installera med kommandot:
+npm install uuidv4@6.2.13
+
+
+4. Starta applikationen
+Starta json-server med:
+json-server --watch database.json --port 8000
+och kör sedan:
+npm run start
+
+Applikationen startar i browsern.

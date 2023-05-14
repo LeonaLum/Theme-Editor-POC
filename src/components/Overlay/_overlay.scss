@@ -1,0 +1,8 @@
+.overlay{
+  @include Flexbox(row, center, center);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.501);
+  z-index: 5;
+}
