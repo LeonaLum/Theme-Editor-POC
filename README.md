@@ -5,6 +5,7 @@ Komma igång
 
 
 1.  Klona ner projektet från Repot i Github
+
 För att få projektet till din dator behöver du installera ett cli verktyg som heter git bash, detta kan hittas här: https://git-scm.com/downloads
 
 När installationen är klar skapar du en ny mapp på din dator.
@@ -16,6 +17,7 @@ Projektmappen finns nu i mappen du skapade.
 
 
 2. Ladda ner visual studio code https://code.visualstudio.com/download
+
 När installationen är klar väljer du open folder.
 Navigera sedan till och välj projektmappen.
 Välj alternativet view i visual studio och klicka sedan på terminal.
@@ -24,6 +26,7 @@ Kör kommandot npm install i terminalen
 
 
 3. Se om alla dependencies är på plats
+
 Dependencies är dem hjälpmedel och verktyg som jag använt mig av för att kunna bygga applikationen. Dessa kan hittas i filen package.json
 Efter att npm install körts behöver dessa dependencies finnas på plats under dependencies:
 
@@ -94,7 +97,11 @@ Installera med kommandot:
 npm install uuidv4@6.2.13
 
 
-4. Starta applikationen
+4. Installera tillägget Live Sass Compiler genom extensions alternativet.
+
+
+5. Starta applikationen
+
 Starta json-server med:
 json-server --watch database.json --port 8000
 och kör sedan:

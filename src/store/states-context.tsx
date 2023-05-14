@@ -5,6 +5,10 @@ import { Istyle } from "../types/globalTypes";
 import { v4 as uuid } from 'uuid';
 
 
+//FÖRKLARING--------------------------------------------------------
+//Dem raderna som börjar med nyckelordet type deklarerar vad det är för datatyp som
+//kommer att förekomma i ett objekt.
+//Nedan deklarerar jag typen av allt som exporteras ut ur contextet.
 type StatesContextType = {
   location: string
   navigate: NavigateFunction
@@ -13,22 +17,17 @@ type StatesContextType = {
   saveTheme(): JSX.Element | void
   showComponent(string:string):boolean
   checkThemeType: (href: string) => void
-  pickTheme: (e:React.MouseEvent<HTMLTableRowElement, MouseEvent>, theme: newThemeType) => void
+  pickTheme: (theme: newThemeType) => void
   removeTheme:(theme: newThemeType) => void
   navBack: () => void
   createModal: (status: string) => void
   startEditor: (string?: string) => void
-
-  // markedTheme: HTMLTableRowElement | null
-  // setMarkedTheme: React.Dispatch<React.SetStateAction<null>>
 
   typeId: string
   setTypeId: React.Dispatch<React.SetStateAction<string>>
 
   loading: boolean
   setLoading: React.Dispatch<React.SetStateAction<boolean>>
-
-
 
   themeType: fetchedTypes["types"] | null
   setThemeType: React.Dispatch<React.SetStateAction<fetchedTypes["types"] | null>>
@@ -96,9 +95,13 @@ const setStyle = ({width, maxWidth, height, fontSize, padding,
   }
 }
 
+
 type StatesContextProviderProps = {
    children: React.ReactNode
 }
+
+//FÖRKLARING--------------------------------------------------
+//Här exporterar jag en typ som jag kommer att behöva i en annan komponent.
 export type newThemeType = {
   id: string
   name: string
@@ -110,6 +113,10 @@ export type newThemeType = {
   }[]
  }
 
+
+ //FÖRKLARING---------------------------------------------------
+ //fetchedTypes anger hur strukturen för editorn ser ut när den fetchas från databasen
+ //Bracket-notationen som förekommer i slutet av ett objekt anger att det är en array med objekt.
 type fetchedTypes = {
   types: {
     id: string
@@ -150,6 +157,7 @@ type fetchedTypes = {
     }[]
   }
 }
+
 export type fetchedThemes = {
   themes: {
     id: string
@@ -162,6 +170,7 @@ export type fetchedThemes = {
     }[]
   }[]
 }
+
 type modalButtonsType = {
     buttons:{
       name: string
@@ -180,6 +189,10 @@ export const StatesContextProvider = ({children}: StatesContextProviderProps) =>
   const navigate = useNavigate();
   let location = useLocation().pathname;
 
+  //FÖRKLARING----------------------------------------------------------
+  //Här skapar jag alla states som kommer att användas genom applikationen
+  //Här anges vad den initiala datatypen är, fetchedtypes är i början null innan datan fetchats
+  //Sedan efter fetchen kan den vara ett objekt av typen fetched types som angivits ovan eller null.
   const [themeType, setThemeType] = useState<fetchedTypes["types"] | null>(null);
   const [newTheme, setNewTheme] = useState<newThemeType | null>(null);
   const [noNewChanges, setNoNewChanges] = useState<boolean>(true);
@@ -194,10 +207,11 @@ export const StatesContextProvider = ({children}: StatesContextProviderProps) =>
   const [modalHeading, setModalHeading] = useState<string>("")
   const [modalInfo, setModalInfo] = useState<string>("")
   const [modalButtons, setModalButtons] = useState<modalButtonsType["buttons"]>([])
-  // const [markedTheme, setMarkedTheme] = useState<HTMLTableRowElement | null>(null);
 
 
-
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen tar in en url i form av en sträng och sätter responsen som tematyp eller tema
+//beroende på den nuvarande urlen
 const fetchData = (url: string) => {
     setLoading(true);
     if(url.includes("types")){
@@ -215,27 +229,16 @@ const fetchData = (url: string) => {
     }
 }
   
-
-const pickTheme = (e:React.MouseEvent<HTMLTableRowElement, MouseEvent>, theme:newThemeType) => {
-
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen tar in ett tema av typen newThemeType som angivits ovan
+//PickedTheme blir det tema som skickas in från table-komponenten
+const pickTheme = (theme:newThemeType) => {
     setPickedTheme(theme)
-
-        // let ar:HTMLElement[] = [];
-        // const themeToMark = e.currentTarget;
-
-        // if(ar.length == 1){
-        //   ar.map((the) => {
-        //     the.style.backgroundColor = "blue";
-        //   })
-        //   ar.pop();
-        //   ar.push(themeToMark)
-        // }
-        
-        // if(ar.length == 0){
-        //   ar.push(themeToMark);
-        // }
 }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen avgör om en komponent ska visas eller gömmas beroende på
+//den sträng som skickas in
 const showComponent = (word:string):boolean => {
     if(location.includes("createnewtheme") && word == "save"){
       return true
@@ -262,7 +265,6 @@ const showComponent = (word:string):boolean => {
 
   //FÖRKLARING-------------------------------------------------
   //Funktionen sparar temat om det inte finns ett valt tema att editera
-  //Här används uuid för att generera ett nytt id till nyskapade teman
   //Typeid till det nya temat anger att det är ett tema för forms
 const saveTheme = (quitAfterSave?: string) => {
 
@@ -300,12 +302,18 @@ const saveTheme = (quitAfterSave?: string) => {
     }
 }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen avgör vad typeId ska vara, om urlen är sweetforms ska typeid vara följande
+//typeId används när typen fetchas för editorn
 const checkThemeType = (href:string) => {
     if(href.includes("/sweetforms")){
       setTypeId("8e8a2d57-f8d6-4cfb-be6d-aa0a45fcfc83")
     }
 }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen skapar basen för ett nytt tema och sätter den som state newTheme
+//Ett datum som ska ange när temat skapats görs, strängen kortas ner med string-metoder
 const createNewTheme = () => {
     const uniqueId = uuid();
     let createdDate = new Date().toLocaleString();
@@ -323,6 +331,9 @@ const createNewTheme = () => {
     setNewTheme(newTheme);
 }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen hittar elementet från previewen med queryselector och  sätter elementets style
+//property till det värde som admin-panelens inputs ändrar
 const updateStyle = (value:string, selector:string, cssProperty:string, isPseudoElement?:string, variableForPseudo?: string) => {
 
     if(isPseudoElement && variableForPseudo){
@@ -348,6 +359,12 @@ const updateStyle = (value:string, selector:string, cssProperty:string, isPseudo
     
 }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen uppdaterar temat onChange som finns på varje input element.
+//Här anges att en inställning endast ska pushas in i temat om dess id inte kan hittas.
+//Om idt hittas ska värdet i inställningen bara uppdateras
+//Värdet som ligger på varje inställning i ett tema är i array-format
+//nextElementSibling används här för att se om inputfältet har en dropdown med units
 const updateTheme = (e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement>, id:string, selector:string, cssProperty:string, defaultSetting:string[], isPseudoElement?: string, variableForPseudo?: string) => {
 
   let valueToBeInserted: string;
@@ -392,11 +409,18 @@ const updateTheme = (e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement>, 
    console.log("NEW THEME IS:", newTheme)
 }
 
+
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen tar bort ett tema genom en DELETE request mot themes endpointen då
+//temat skickas in och dess id används i requesten
 const removeTheme = (theme: newThemeType) => {
    axios.delete(`http://localhost:8000/themes/${theme.id}`);
    createModal("themewasremoved")
 }
 
+//FÖRKLARING-------------------------------------------------------------
+//Funktionen kollar på den nuvarande urlen och avgör vart man kommer när
+//man klickar på back knappen
 const navBack = () => {
   if(!noNewChanges && location.includes("themeeditor")){
     createModal("unsavedChanges")
@@ -418,6 +442,10 @@ const navBack = () => {
   }
  }
 
+//FÖRKLARING---------------------------------------------------------------
+//Funktionen avgör hur modalen ska se ut när den kommer fram.
+//Budskapen sätts med states, funktionen avgör budskapen beroende på statusen som
+//skickats in från komponenten som kallar på modalen
  const createModal = (status: string, quitAfterSave?: string) => {
     switch(status){
 
@@ -519,6 +547,8 @@ const navBack = () => {
     }
  }
 
+ //Funktionen startar editorn genom att fetcha den data som avgör editorns struktur
+ //PickedTheme avgör om editorn ska gå in i edit läge eller new theme läge
  const startEditor = (string?: string) => {
   if(themeType == null){
         fetchData(`http://localhost:8000/types/${typeId}`)
@@ -541,11 +571,12 @@ const navBack = () => {
 }
 
   //FÖRKLARING--------------------------------------------------
-  //Funktionen får in varje element genom ref hooken i input elementet för att uppdatera dess värde
-  //Ändringarna från det sparade temat ska nu bli värdet av inputfälten om det gjorts ändringar
-  //Här tittar vi på värdet i elementets data-set, den anger om den initiala laddningen gjorts
-  //Värdena från det sparade temat tillsätts under focus eventet av input-fältet
-  //Efter att värdet tillsatts bluras elementet igen
+  //Funktionen tittar på värdet av data-set attributen på alla input element.
+  //Till en början är den false men blir true när funktionen körts på elementet.
+  //Resultatet blir att denna funktion endast körs på varje input en gång vilket
+  //blir den initiala laddningen. Default värdena sätts in i alla input fält och
+  //focus eventet kör updateTheme funktionen som sedan kör update style vilket gör att
+  //previewen får sin style när editorn laddas
   const initialLoad = (element: HTMLInputElement | HTMLSelectElement | null) => {
     if(element != null && element.getAttribute("data-initial-load") == "false"){
       element?.focus();

@@ -15,7 +15,14 @@ export interface ThemeEditorProps {
 export const ThemeEditor = ({}: ThemeEditorProps) => {
 
   const context = useContext(StatesContext);
-  console.log("LOADING IS:", context?.loading)
+
+
+
+  //FÖRKLARING------------------------------------------------------------------
+  //Funktionen kollar om unit-dropdownens värde förändrats
+  //Om inställningens id inte hittas i temats inställningar ges defaultVärdet
+  //Om det hittas retuneras false och den sparade inställningen väljs istället
+  //haha måste ändra detta senare, är lite ologiskt :P
   const checkForUnitChange = (settingId: string):boolean => {
     if(!context?.pickedTheme?.attributes.find((attribute) => attribute.id == settingId)){
       return true
@@ -25,6 +32,24 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
     }
 }
   
+  //FÖRKLARING------------------------------------------------------------------
+  //Om picked theme inte är null körs denna funktion då editorn är i edit läge
+  //Om temats setting har samma id som inställningen vi är på får variabeln editedValue
+  //värdet av temats inställning som är i array format.
+  //Om temat inte har en inställning i sig vars inställning matchar den nuvarande sätts
+  //defaultvärdet från types objektet.
+
+  //Varje inställning i ett tema har en values array med det värde som gäller för inställningen
+  //Kolla strukturen för Monospace temat i database.json
+
+  //Om nyckeln settingDefaultUnit förekommer tittar vi efter värdet i dropdownen.
+  //Uniten sparas med värdet i en inställning i ett tema.
+  //Här separeras värdet och måttet så att värdet kan sättas i input-fältet och måttet i dropdownen.
+  //edited value blir här en array med två värden
+  //Måttet rensas bort från värdet som ska till inputfältet och sätts i variablen unitToRemove
+  //Inputfältet får värdet på den första indexplatsen
+  //Dropdownen får värdet på den andra indexplatsen
+
   const checkEdits = ( settingId: string, settingDefault: string[], settingDefaultUnit?: string, settingAlternatives?: string):string[] => {
   
     let editedValue:string[] = [];
@@ -56,6 +81,10 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
       return editedValue
   }
 
+
+  //FÖRKLARING-----------------------------------------------------------------------
+//Funktionen hittar elementet vars text ändras med ett onchange event.
+//Detta är bara en preview funktionalitet och sparas inte med temat
   const setPreviewText = (e: React.ChangeEvent<HTMLInputElement>, selector: string) => {
        const element = document.querySelector(selector);
        if(element){
@@ -64,11 +93,17 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
        
   }
 
+  //FÖRKLARING---------------------------------------------------------------------
+  //Funktionen hittar elementet från previewen och togglar en hide klass på den
   const toggleVisibility = (selector: string) => {
      const element = document.querySelector(selector);
      element?.classList.toggle("hide");
   }
 
+  //FÖRKLARING---------------------------------------------------------------------
+  //ToggleSwitch komponenten har en ref attribut som kör den här funktionen 
+  //När editorn laddas. Om elementet finns och inte har en attribut som heter data-initial-load
+  //Får den klassen hide vilket gömmer alla kommentarer initialt
   const setInitialClass = (selector: string) => {
     const element = document.querySelector(selector);
 
@@ -78,6 +113,10 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
     }
   }
 
+ //FÖRKLARING---------------------------------------------------------------------
+//Funktionen minimerar alla sub-sektioner så att allt är minimerat när editorn öppnas
+//för första gången. Sub-sectionerna hittas och samlas i en nodelist som jag sedan gör till en array.
+//Alla loopas sedan igenom och får en hide klass
  const minimizeSections = () => {
   const subSections = document.querySelectorAll<Element>(".editor-sub-sections") as NodeListOf<Element>;
      const subSectionsArray = Array.from(subSections);
@@ -87,6 +126,7 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
      })
  }
 
+ 
   useEffect(() => {
    context?.startEditor();
    minimizeSections();

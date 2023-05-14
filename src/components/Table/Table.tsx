@@ -30,7 +30,7 @@ export const Table = ({content}: TableProps) => {
             <tr key={data.id} 
                 id={data.id}
                 onClick={(e) => {
-                  context?.pickTheme(e, data)
+                  context?.pickTheme(data)
                }
                 }>
                 <td>
@@ -45,7 +45,7 @@ export const Table = ({content}: TableProps) => {
                 <td>
                   <div className="delete-icon"
                   onClick={(e:React.MouseEvent<HTMLTableRowElement, MouseEvent>) => {
-                                          context?.pickTheme(e, data)
+                                          context?.pickTheme(data)
                                           if(context?.pickedTheme){
                                             context?.createModal("remove")
                                             context?.setShowOverlay(true);
