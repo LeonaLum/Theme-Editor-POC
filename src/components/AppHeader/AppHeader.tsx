@@ -27,11 +27,11 @@ export const AppHeader = () => {
   return (
     <header className="app-header">
      <h1>
-      <span className="sweet-logo"></span>
+      <span className="sweet-logo" aria-label="Sweet Logo"></span>
       <div className="logo-border"></div>
       <div className="paint-icon"></div>
         Theme editor
-      </h1>
+     </h1>
      {context?.showComponent("name") &&
      <InputField placeHolder="Write Theme Name..."
                  isNameInput={isNameInput}

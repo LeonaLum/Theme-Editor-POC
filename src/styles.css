@@ -10,6 +10,16 @@
   --PeachHover: #f0615c;
 }
 
+@font-face {
+  font-family: "Intro Cond";
+  src: url("/src/fonts/intro-cond-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LF Rubrik";
+  src: url("/src/fonts/lf-rubrik.woff2") format("woff2");
+}
+
 *:not(button, .preview-content) {
   margin: 0;
   padding: 0;
@@ -18,7 +28,7 @@
   color: var(--TextDark);
 }
 
-.app-footer, .app-header, .editor-admin, .card-outer, table,
+.app-footer .button, .app-header, .app-header .input-field, .editor-admin *, .card-outer, table,
 .modal-outer, .loading, .big-heading {
   font-family: 'Poppins', sans-serif;
 }
@@ -73,6 +83,57 @@ button {
   cursor: pointer;
 }
 
+/*FORMS PREVIEW SETUP*/
+.Survey .QuestionText {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Survey .QuestionText .link-button.round.icon.icon-info.xsmall {
+  display: inline-block;
+  text-align: center;
+  margin: 5px 5px 5px 10px;
+  --helpIcon: "i";
+  --helpFontSize: 14px;
+  --helpColor: black;
+  --helpWeight: 200;
+}
+
+.Survey .QuestionText .link-button.round.icon.icon-info.xsmall::before {
+  content: var(--helpIcon);
+  font-size: var(--helpFontSize);
+  color: var(--helpColor);
+  font-weight: var(--helpWeight);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Survey .Navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/*PSEUDO*/
 .Survey .qtRadio:not(.qtButton) input[type="radio"] {
   --radioContent: "''";
   --radioTransform: initial;
@@ -154,14 +215,21 @@ button {
   opacity: var(--radioOpacityChecked);
 }
 
-.Survey input {
-  --inputHoverBorderColor: initial;
-  --inputHoverBackgroundColor: none;
-}
-
-.Survey input:hover {
-  background-color: var(--inputHoverBackgroundColor);
-  border-color: var(--inputHoverBorderColor);
+/*RESPONSIVE*/
+@media screen and (max-width: 1000px) {
+  fieldset.option {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  fieldset.option .multiple-inputs,
+  fieldset.option label {
+    padding-bottom: 10px !important;
+  }
 }
 
 .app-header {
@@ -181,7 +249,7 @@ button {
   padding: 2em;
   border-bottom: solid 1px var(--LightGrey);
   color: grey;
-  height: 10%;
+  height: 7%;
 }
 
 .app-header h1 {
@@ -205,18 +273,18 @@ button {
   background-image: url("../src/icons/SweetLogo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   display: inline-block;
-  height: 30px;
-  width: 100px;
+  height: 20px;
+  width: 80px;
   margin-right: 10px;
 }
 
 .app-header h1 .logo-border {
-  height: 35px;
+  height: 31px;
   width: 1.5px;
   background-color: black;
-  margin: 0px 15px;
+  margin: 0px 12px;
 }
 
 .app-header h1 .paint-icon {
@@ -373,13 +441,13 @@ button {
 }
 
 .editor-admin .editor-section .editor-sub-section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .editor-admin .editor-section .editor-sub-section .editor-section-subheading {
   font-weight: 500;
   font-size: 1rem;
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 25px 0px;
 }
 
 .editor-admin .editor-section .editor-sub-section .option {
@@ -418,7 +486,8 @@ button {
 .editor-admin .editor-section .editor-sub-section .option label {
   display: block;
   height: 100%;
-  width: 190px;
+  max-width: 190px;
+  min-width: 160px;
   font-size: 0.8rem;
 }
 
@@ -457,8 +526,7 @@ button {
   background-color: none;
   border: none;
   border-bottom: 1px solid grey;
-  padding: 2px;
-  padding-left: 5px;
+  padding: 2px 2px 3px 2px;
   font-size: 0.7em;
 }
 
@@ -590,8 +658,7 @@ button {
   background-color: none;
   border: none;
   border-bottom: 1px solid grey;
-  padding: 2px;
-  padding-left: 5px;
+  padding: 2px 2px 3px 2px;
   font-size: 0.7em;
 }
 
@@ -744,6 +811,8 @@ table, th, td {
 }
 
 .button {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
   cursor: pointer;
   display: block;
   font-size: 0.8rem;
@@ -853,8 +922,7 @@ table, th, td {
   background-color: none;
   border: none;
   border-bottom: 1px solid grey;
-  padding: 2px;
-  padding-left: 5px;
+  padding: 2px 2px 3px 2px;
   font-size: 0.7em;
 }
 

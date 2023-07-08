@@ -84,6 +84,49 @@
   ]
 }
 
+//HOVER STATES
+{
+  "id": "477b295f-5c6f-497b-9380-0aaoopptyu8e69b",
+  "subHeading": "All Inputs Hover (Mouse over)",
+  "selector": ".Survey .Answers input[type=\"text\"]:hover, .Survey .Question .Answers input[type=\"password\"]:hover, .Survey .Question .Answers input[type=\"email\"]:hover, .Survey .Question .Answers select:hover, .Survey textarea:hover, .Survey .qtDropDown select:hover, .Survey qtAutoComplete input[type=\"text\"]:hover, .Survey .qtCustom input[type=\"text\"]:hover",
+  "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+  "attributes": [
+    {
+      "id": "6aotopue-c3e6-4a90-b112-vnuyy9808712",
+      "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+      "name": "Background Color",
+      "type": "text",
+      "variableForPseudo": "--inputHoverBackgroundColor",
+      "cssProperty": "background-color: ",
+      "default": [
+        "none"
+      ]
+    },
+    {
+      "id": "95d37ce3-olmmb4-avvio9b-8115-394b2dc78cfc",
+      "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+      "name": "Border Color",
+      "type": "text",
+      "variableForPseudo": "--inputHoverBorderColor",
+      "cssProperty": "border-color: ",
+      "default": [
+        "#d9d9d9"
+      ]
+    },
+    {
+      "id": "aeaop6-d696-vuop2-95d9-8aff1440287c",
+      "selectorId": "e1985710-91b9-4eda-83f3-5aauutttop1",
+      "name": "Border Style",
+      "type": "text",
+      "alternatives": "borderStyles",
+      "cssProperty": "border-style: ",
+      "default": [
+        "solid"
+      ]
+    }
+  ]
+},
+
 
 
 

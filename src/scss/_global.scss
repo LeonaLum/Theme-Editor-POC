@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@font-face {
+  font-family: "Intro Cond";
+  src: url("/src/fonts/intro-cond-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "LF Rubrik";
+  src: url("/src/fonts/lf-rubrik.woff2") format("woff2");
+}
+
+
+
+
 *:not(button, .preview-content){
   margin: 0;
   padding: 0;
@@ -7,7 +20,7 @@
   color: var(--TextDark);
 }
 
-.app-footer, .app-header, .editor-admin, .card-outer, table, 
+.app-footer .button, .app-header, .app-header .input-field, .editor-admin *, .card-outer, table, 
 .modal-outer, .loading, .big-heading{
   font-family: 'Poppins', sans-serif;
 }
@@ -54,9 +67,51 @@ button{
 }
 
 
-//Sätter upp variabler för pseudoelementen eftersom att dessa inte kan nås med queryselector
+/*FORMS PREVIEW SETUP*/
 
 
+// :root{
+//     --inputHoverBorderColor: initial;
+//     --inputHoverBackgroundColor: none;
+// }
+
+.Survey {
+
+  .QuestionText{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    .link-button.round.icon.icon-info.xsmall{
+      display: inline-block;
+      text-align: center;
+      margin: 5px 5px 5px 10px;
+      --helpIcon: "i";
+      --helpFontSize: 14px;
+      --helpColor: black;
+      --helpWeight: 200;
+    }
+    .link-button.round.icon.icon-info.xsmall::before{
+      content: var(--helpIcon);
+      font-size: var(--helpFontSize);
+      color: var(--helpColor);
+      font-weight: var(--helpWeight);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .Navigation{
+     display: flex;
+     justify-content: flex-end;
+  }
+}
+
+
+
+/*PSEUDO*/
 
 .Survey .qtRadio:not(.qtButton) input[type="radio"]{
 --radioContent: "''";
@@ -145,12 +200,16 @@ button{
 
 
 
-.Survey input{
-  --inputHoverBorderColor: initial;
-  --inputHoverBackgroundColor: none;
-}
 
-.Survey input:hover{
-  background-color: var(--inputHoverBackgroundColor);
-  border-color: var(--inputHoverBorderColor);
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1000px){
+  fieldset.option{
+      flex-direction: column !important;
+      align-items: flex-start !important;
+  }
+  fieldset.option .multiple-inputs,
+  fieldset.option label{
+      padding-bottom: 10px !important;
+  }
 }

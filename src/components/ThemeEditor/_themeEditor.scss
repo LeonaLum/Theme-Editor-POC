@@ -58,11 +58,11 @@
       padding-bottom: 30px;
     }
     .editor-sub-section{
-       margin-bottom: 30px;
+       margin-bottom: 40px;
       .editor-section-subheading{
         font-weight: 500;
         font-size: 1rem;
-        margin: 10px 0px 20px 0px;
+        margin: 10px 0px 25px 0px;
       }
       .option{
         @include Flexbox(row, flex-end, flex-start);
@@ -81,7 +81,8 @@
         label{
           display: block;
           height: 100%;
-          width: 190px;
+          max-width: 190px;
+          min-width: 160px;
           font-size: 0.8rem;
         }
       }

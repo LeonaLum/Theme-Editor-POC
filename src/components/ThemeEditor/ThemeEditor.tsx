@@ -96,8 +96,10 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
   //FÖRKLARING---------------------------------------------------------------------
   //Funktionen hittar elementet från previewen och togglar en hide klass på den
   const toggleVisibility = (selector: string) => {
-     const element = document.querySelector(selector);
-     element?.classList.toggle("hide");
+     const elements = Array.from(document.querySelectorAll(selector));
+     elements.map((element) => {
+      element?.classList.toggle("hide");
+     })
   }
 
   //FÖRKLARING---------------------------------------------------------------------
@@ -105,12 +107,14 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
   //När editorn laddas. Om elementet finns och inte har en attribut som heter data-initial-load
   //Får den klassen hide vilket gömmer alla kommentarer initialt
   const setInitialClass = (selector: string) => {
-    const element = document.querySelector(selector);
+    const elements = Array.from(document.querySelectorAll(selector));
 
-    if(element != null && !element.getAttribute("data-initial-load")){
-      element?.classList.add("hide");
-      element?.setAttribute("data-initial-load", "true");
-    }
+    elements.map((element) => {
+      if(element != null && !element.getAttribute("data-initial-load")){
+        element?.classList.add("hide");
+        element?.setAttribute("data-initial-load", "true");
+      }
+    })
   }
 
  //FÖRKLARING---------------------------------------------------------------------
@@ -126,10 +130,20 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
      })
  }
 
+//  const addExtraSection = () => {
+//     const sectionsContainer = document.querySelector(".Sections") as HTMLDivElement;
+//     const section = document.querySelector(".Section");
+//     const sectionCopy = section?.cloneNode(true) as HTMLDivElement;
+//     if(sectionsContainer && sectionCopy){
+//       section?.after(sectionCopy)
+//     } 
+//  }
+
  
   useEffect(() => {
    context?.startEditor();
    minimizeSections();
+  //  addExtraSection();
    return () => {
     context?.setPickedTheme(null) 
   }
@@ -145,13 +159,42 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
           break;
         case "borderStyles": content = ["dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset", "none"]
           break;
-        case "display": content = ["","inline-flex"]
+        case "display": content = ["","inline-flex", "inline-block"]
           break;
         case "alignItems": content = ["","center"]
           break;
         case "textAlign": content = ["initial","left", "center", "right"]
           break;
-
+        case "boxShadow": content = ["0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0,0,0,0.12)",
+                                     "0 1px 6px 0 rgba(0, 0, 0, 0.30)",
+                                     "0 0px 4px rgba(0,0,0,0.12), 0 1px 4px 0 rgba(0,0,0,0.24)", 
+                                     "none"]
+          break;
+        case "fontWeight": content = ["initial","bold", "bolder", "normal", "lighter", "light", "900", "800", "700", "600", "500", "400", "300", "200", "100"]
+          break;
+        case "textDecoration": content = ["none", "underline"]
+          break;
+        case "fontFamily": content = ["Open Sans, Verdana, Helvetica, Sans-Serif", 
+                                      "Poppins",
+                                      "Intro Cond",
+                                      "LF Rubrik",
+                                      "Open Sans, Helvetica, Sans-Serif",
+                                      "Open Sans, Arial, Sans-Serif",
+                                      "Open Sans, Arial Black, Sans-Serif",
+                                      "Open Sans, Tahoma, Sans-Serif",
+                                      "Open Sans, Trebuchet MS, Sans-Serif",
+                                      "Open Sans, Impact, Sans-Serif",
+                                      "Open Sans, Gill Sans, Sans-Serif",
+                                      "Open Sans, Times New Roman , Serif",
+                                      "Open Sans, Georgia, Serif",
+                                      "Open Sans, Palatino, Serif",
+                                      "Open Sans, Baskerville, Serif",
+                                      "Open Sans, monospace",
+                                      "Open Sans, Courier, monospace",                                    
+                                      "Open Sans, Brush Script MT",
+                                      "Open Sans, Luminari, fantasy",
+                                      "Open Sans, Comic Sans MS" ]
+          break;
       }
       return content
   }
@@ -297,7 +340,7 @@ export const ThemeEditor = ({}: ThemeEditorProps) => {
                                             checkEdits(setting.id, setting.default, setting.defaultUnit)[0]
                                             : setting.default[0]
                                           }
-                                          className="dropdown-alternatives"
+                                          className={setting.alternatives == "boxShadow" || setting.alternatives == "fontFamily" ? "input-preview-text" : "dropdown-alternatives"}
 
                                 />
                                 :

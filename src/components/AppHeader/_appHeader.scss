@@ -3,7 +3,7 @@
   padding: 2em;
   border-bottom: solid 1px var(--LightGrey);
   color: grey;
-  height: 10%;
+  height: 7%;
   h1{
     @include Flexbox(row, center, flex-start);
    font-size: 1rem;
@@ -11,17 +11,17 @@
     background-image: url("../src/icons/SweetLogo.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
     display: inline-block;
-    height: 30px;
-    width: 100px;
+    height: 20px;
+    width: 80px;
     margin-right: 10px;
    }
    .logo-border{
-    height: 35px;
+    height: 31px;
     width: 1.5px;
     background-color: black;
-    margin: 0px 15px;
+    margin: 0px 12px;
    }
    .paint-icon{
     background-image: url("../src/icons/Palette.svg");
